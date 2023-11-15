@@ -1,0 +1,560 @@
+---
+title: "YieldTrend10yrs - sharable"
+author: "Pannaree Boonyuen"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document:
+    toc: true
+---
+
+This is only the part where it is not confidential.
+
+# Background
+This is descriptive statistics of data from the original Thai document in Office of Agricultural Economics website is named พันธุ์ข้าวนาปี : เนื้อที่เพาะปลูก ผลผลิต และผลผลิตต่อไร่ รายจังหวัด ปีเพาะปลูก, appeared as in [this example file from the year 2022](https://www.oae.go.th/assets/portals/1/fileups/prcaidata/files/rice%20varieties%2064.pdf) in a section called [ตารางแสดงรายละเอียดข้าวนาปี]( https://www.oae.go.th/view/1/%E0%B8%95%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%87%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%A5%E0%B8%B0%E0%B9%80%E0%B8%AD%E0%B8%B5%E0%B8%A2%E0%B8%94%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A7%E0%B8%99%E0%B8%B2%E0%B8%9B%E0%B8%B5/TH-TH). 
+
+
+
+# Part A: Raw Data Processing
+
+## Import
+Import the raw data sheets (seperate sheet for each year), join them to make one data frame and raname the columns so that they are without whitespaces.
+
+```{r, results = "hide", message=FALSE, warning=FALSE} 
+
+library(readr)
+library(tidyverse)
+library(lava)
+library(RColorBrewer)
+library(ggplot2)
+
+THRiceYieldpnv2021 <-
+  read_csv(
+    "data/raw-data/[Raw]_Thailand rice yield data by provice and variety 2012-2021 - 2021.csv"
+  )
+THRiceYieldpnv2020 <-
+  read_csv(
+    "data/raw-data/[Raw]_Thailand rice yield data by provice and variety 2012-2021 - 2020.csv"
+  )
+THRiceYieldpnv2019 <-
+  read_csv(
+    "data/raw-data/[Raw]_Thailand rice yield data by provice and variety 2012-2021 - 2019.csv"
+  )
+THRiceYieldpnv2018 <-
+  read_csv(
+    "data/raw-data/[Raw]_Thailand rice yield data by provice and variety 2012-2021 - 2018.csv"
+  )
+THRiceYieldpnv2017 <-
+  read_csv(
+    "data/raw-data/[Raw]_Thailand rice yield data by provice and variety 2012-2021 - 2017.csv"
+  )
+THRiceYieldpnv2016 <-
+  read_csv(
+    "data/raw-data/[Raw]_Thailand rice yield data by provice and variety 2012-2021 - 2016.csv"
+  )
+THRiceYieldpnv2015 <-
+  read_csv(
+    "data/raw-data/[Raw]_Thailand rice yield data by provice and variety 2012-2021 - 2015.csv"
+  )
+THRiceYieldpnv2014 <-
+  read_csv(
+    "data/raw-data/[Raw]_Thailand rice yield data by provice and variety 2012-2021 - 2014.csv"
+  )
+THRiceYieldpnv2013 <-
+  read_csv(
+    "data/raw-data/[Raw]_Thailand rice yield data by provice and variety 2012-2021 - 2013.csv"
+  )
+THRiceYieldpnv2012 <-
+  read_csv(
+    "data/raw-data/[Raw]_Thailand rice yield data by provice and variety 2012-2021 - 2012.csv"
+  )
+THRiceYieldpnv10yrs <-
+  rbind(
+    THRiceYieldpnv2012,
+    THRiceYieldpnv2013,
+    THRiceYieldpnv2014,
+    THRiceYieldpnv2015,
+    THRiceYieldpnv2016,
+    THRiceYieldpnv2017,
+    THRiceYieldpnv2018,
+    THRiceYieldpnv2019,
+    THRiceYieldpnv2020,
+    THRiceYieldpnv2021
+  )
+names(THRiceYieldpnv10yrs) <-
+  c(
+    "year",
+    "province",
+    "variety",
+    "plantingarea",
+    "harvestedarea",
+    "production",
+    "YieldPA",
+    "YieldHA",
+    "portionplant"
+  )
+```
+
+
+## Check summary and Remove Missing Data 
+Check how it looks like and whether there is any missing data (NA)
+```{r, message=FALSE, warning=FALSE}
+#How it look like
+head(THRiceYieldpnv10yrs)
+#What overall data composed of 
+summary(THRiceYieldpnv10yrs)
+#how many missing dates
+sum(is.na(THRiceYieldpnv10yrs)) #there are 9 missing values (NA)
+#check where there are in an array-based index
+which(is.na.data.frame(THRiceYieldpnv10yrs), arr.ind	= TRUE) #there are from the same row
+#easily remove it out
+THRiceYieldpnv10yrs <-
+  THRiceYieldpnv10yrs %>% filter(!is.na(year))
+#recheck
+sum(is.na(THRiceYieldpnv10yrs)) #there are no NA's
+```
+
+## Add "region" variable and change too-long variety name
+To aid the search for trends, we add the region of province from which each observation was recorded. The region is defined geographically. The total number of provinces = 77, divided into 6 regions: NorthEast, North, South, Central, East, anก West.
+
+```{r, message=FALSE, warning=FALSE}
+
+region_provincelist <- read_csv("data/raw-data/region-provincellsit.csv",col_names = F)
+NorthEast<- region_provincelist[1,2]
+North <- region_provincelist[2,2]
+South <- region_provincelist[3,2]
+Central <- region_provincelist[4,2]
+East <- region_provincelist[5,2]
+West <- region_provincelist[6,2]
+
+#remove whitespaces and split them into individual provinces with the function below
+library(stringr)
+FormProvinceStr <- function(Listcomma) {
+  Listcomma <- str_replace_all(Listcomma, " ", "")
+  Listcomma2 <- str_split(Listcomma, ",", simplify = TRUE)
+  return(Listcomma2)
+}
+#use with each list
+North <- FormProvinceStr(North)
+NorthEast <- FormProvinceStr(NorthEast)
+South <- FormProvinceStr(South)
+Central <- FormProvinceStr(Central)
+East <- FormProvinceStr(East)
+West <- FormProvinceStr(West)
+#create the province list for future's use
+provinceList <- c(NorthEast, North, South, Central, East, West)
+provinceList <-
+  provinceList[order(c(NorthEast, North, South, Central, East, West))] #order alphabetically
+
+#also remove whitespaces from "province" column of THRiceYieldpnv10yrs to make it match the lists
+THRiceYieldpnv10yrs$province <-
+  str_replace_all(THRiceYieldpnv10yrs$province, " ", "")
+
+#use mutate + case_when to add the correct region to each observation
+RegTHRiceYieldpnv10yrs <- THRiceYieldpnv10yrs %>%
+  mutate(
+    region = case_when(
+      match(province, NorthEast) > 0 ~ "NorthEast",
+      match(province, North) > 0 ~ "North",
+      match(province, South) > 0 ~ "South",
+      match(province, Central) > 0 ~ "Central",
+      match(province, East) > 0 ~ "East",
+      match(province, West) > 0 ~ "West",
+      TRUE ~ "CheckSpell"
+    )
+  )
+
+which(RegTHRiceYieldpnv10yrs$region == "CheckSpell", arr.ind = TRUE)
+#no data has not found a match
+
+#and change too-long variety names: NonPhotoperiodSensitiveRice, PhotoperiodSensitiveRice, SupanburiAromaticRice
+RegTHRiceYieldpnv10yrs$variety[which(RegTHRiceYieldpnv10yrs$variety == "NonPhotoperiodSensitiveRice")] <-
+  "NonPhotoSens"
+RegTHRiceYieldpnv10yrs$variety[which(RegTHRiceYieldpnv10yrs$variety == "PhotoperiodSensitiveRice")] <-
+  "PhotoSens"
+RegTHRiceYieldpnv10yrs$variety[which(RegTHRiceYieldpnv10yrs$variety == "SupanburiAromaticRice")] <-
+  "SuphanAromatic"
+
+#Make a variety list and a focused variety list, which are the varieties we have collected the data for in the past and established the standard practice for 
+varlist <- unlist(distinct(as.data.frame(RegTHRiceYieldpnv10yrs$variety)), use.names = F)
+focusedvar <- c("PTT1", "KDML105", "RD6", "NonPhotoSens")
+```
+
+
+## Remove "planting area = 0"
+* There is inconsistency in data recording practices. Before 2017, they did not record a variety that a province did not grow; however, after 2017, they recorded all 12 varieties for all provinces and added "planting area = 0" for a variety that was not grown in that province (which means "yield = 0" was also added). Hence, calculating the mean yield using the mean() function showed a drastic drop  after year 2017 ("yield=0" was interpreted as if the yield was 0, but in fact, the planting area is 0): see the first graph. 
+* We only need calculate the mean yields from the provinces with growers, so we decided to remove the observation with planting area = 0. After processing, the means were more stable: see the second graph.
+
+```{r}
+#Original incorrect MeanYield
+RegTHRiceYieldpnv10yrs %>% group_by(variety, year) %>% summarise(MeanYield = mean(YieldHA)) %>%
+  ggplot() +
+  geom_point(mapping = aes(y = MeanYield, x = year, col = variety),
+             size = 1.5) +
+  geom_line(mapping = aes(y = MeanYield, x = year, col = variety),
+            size = 1) +
+  scale_y_continuous(breaks = seq(0, 600, by = 50)) +
+  labs(title = "Original incorrect MeanYield")
+
+RegTHRiceYieldpnv10yrs %>% filter(plantingarea == 0) 
+#there are 1811 rows with planting area = 0. All of them produced in 2017 onwards.
+
+#remove planting area ==0
+RegTHRiceYieldpnv10yrs <- RegTHRiceYieldpnv10yrs %>% filter(plantingarea != 0)
+
+#New plot
+RegTHRiceYieldpnv10yrs %>% group_by(variety, year) %>% summarise(MeanYield = mean(YieldHA)) %>%
+  ggplot() +
+  geom_point(mapping = aes(y = MeanYield, x = year, col = variety),
+             size = 1.5) +
+  geom_line(mapping = aes(y = MeanYield, x = year, col = variety),
+            size = 1) +
+  scale_y_continuous(breaks = seq(0, 600, by = 50)) +
+  labs(title = "Processed correct MeanYield")
+```
+ 
+
+# Part B: Trend of Production and Popularity
+
+## Trend of all varieties, whole-country
+The plots show the sum of either production (1.1 and 2.1) or planting area (1.2 and 2.2) of rice of each variety, produced across the country each year (yearly totoal production in tons and yearly total planting area in rais). Part 1 is for all varieties, and part 2 is for focused varieties. 
+
+```{r}
+RegTHRiceYieldpnv10yrs %>% group_by(variety, year) %>% summarise(totProd = sum(production)) %>%
+  ggplot() +
+  geom_line(mapping = aes(x = year, y = totProd, col = variety)) +
+  geom_point(mapping = aes(x = year, y = totProd, col = variety)) +
+  theme(axis.text.x = element_text(angle = 45)) +
+  labs(y = "Sum Production of all provinces (tons)",  title = "1.1 All varieties - Sum Production")
+RegTHRiceYieldpnv10yrs %>% group_by(variety, year) %>% summarise(totPop = sum(plantingarea)) %>%
+  ggplot() +
+  geom_line(mapping = aes(x = year, y = totPop, col = variety)) +
+  geom_point(mapping = aes(x = year, y = totPop, col = variety)) +
+  theme(axis.text.x = element_text(angle = 45)) +
+  labs(y = "Sum Planting Area of all provinces (rais)",  title = "1.2 All varieties - Sum Planting Area")
+
+#focused var only
+RegTHRiceYieldpnv10yrs %>% filter(variety %in% focusedvar) %>% group_by(variety, year) %>% summarise(totProd = sum(production)) %>%
+  ggplot() +
+  geom_line(mapping = aes(x = year, y = totProd, col = variety)) +
+  geom_point(mapping = aes(x = year, y = totProd, col = variety)) +
+  theme(axis.text.x = element_text(angle = 45)) +
+  labs(y = "Sum Production of all provinces (tons)", title = "2.1 Focused varieties - Sum Production")
+RegTHRiceYieldpnv10yrs %>% filter(variety %in% focusedvar) %>% group_by(variety, year) %>% summarise(totPop = sum(plantingarea)) %>%
+  ggplot() +
+  geom_line(mapping = aes(x = year, y = totPop, col = variety)) +
+  geom_point(mapping = aes(x = year, y = totPop, col = variety)) +
+  theme(axis.text.x = element_text(angle = 45)) +
+  labs(y = "Sum Planting Area of all provinces (rais)", title = "2.2 Focused varieties - Sum Planting Area")
+```
+
+According to fig 1.1-1.2, 
+* KDML105 (Jasmine aromatic rice), non-photoperiod sensitive rice (e.g. RD85, non-glutinous rice) and RD6 (glutinous rice) were the three top most produced and planted in-season rice in Thailand over the 10-year period from 2012 to 2021. The rest were produced less than 2,500,000 tons for all years from less than 5,000,000 rais for each variety. 
+* KDML105 was produced more than 7,500,000 tons every year from more than 20,000,000 rais. RD6 was produced between 4,000,000-6,250,000 tons from around 15-18 million rais. Their trends were quite stable (slight downward for RD6 and slight upward for KDML105), but non-photoperiod sensitive rice saw an increase over year from 6,250,000 in 2012 to just more than 8,600,000 in 2021, despite a little dip in 2019. 
+* PTT1 had become the fourth most produced in year 2018 onwards, but to see the treand in planting area more clearly, we need to plot only the focused varieties.
+
+
+Looking closer into fig 2.1, 
+* KDML105 had been the most produced variety of in-season rice in Thailand in all years from 2012-2021, followed by non-photoperiod sensitive rice. Only in 2018 did they switch places. 
+* The third most produced was RD6. PTT1 was much less produced, only reach the top of 1,250,000 tons in year 2019, approximately 7 times lower than that of KDML105.
+
+Looking at the planting area (fig 2.2), 
+* KDML105 had always been most planted. 
+* RD6 and non-photoperiod sensitive rice had been roughly equally popular after 2017. 
+* PTT1 was much less planted, also reaching the maximum of 1,250,000 rais in 2019, which is around 5 times lower than that of KDML105.
+* In other words, the planting area trends are similar to the trends for production.
+
+**These are the whole-country stats, so later, we would zoom into a smaller scale, a region, to understand further at the trend of production and popularity for the focused varieties.**
+
+## Trend of focused varieties, regional 
+```{r}
+RegTHRiceYieldpnv10yrs %>% filter(variety %in% focusedvar) %>% group_by(variety, region, year) %>% summarise(totProd = sum(production))  %>% 
+  ggplot() +
+  geom_line(mapping = aes(x = year, y = totProd, col = variety)) +
+  facet_wrap(~region) +
+  geom_point(mapping = aes(x = year, y = totProd, col = variety)) +
+  theme(axis.text.x = element_text(angle = 45)) +
+  labs(y = "Sum Production of all provinces (tons)", title = "3.1 Focused varieties, all regions - Sum Production")
+RegTHRiceYieldpnv10yrs %>% filter(variety %in% focusedvar) %>% group_by(variety, region, year) %>% summarise(totPop = sum(plantingarea))  %>% 
+  ggplot() +
+  geom_line(mapping = aes(x = year, y = totPop, col = variety)) +
+  facet_wrap(~region) +
+  geom_point(mapping = aes(x = year, y = totPop, col = variety)) +
+  theme(axis.text.x = element_text(angle = 45)) +
+  labs(y = "Sum Planting Area of all provinces (rais)", title = "3.2 Focused varieties, all regions - Sum Planting Area")
+
+
+RegTHRiceYieldpnv10yrs %>% filter(variety %in% focusedvar) %>% group_by(region, variety, year) %>% summarise(totProd = sum(production)) %>% filter(region %in% c("Central", "North", "NorthEast")) %>%
+  ggplot() +
+  geom_line(mapping = aes(x = year, y = totProd, col = variety)) +
+  geom_point(mapping = aes(x = year, y = totProd, col = variety)) +
+  facet_wrap(~region) +
+  theme(axis.text.x = element_text(angle = 45)) +
+  labs(y = "Sum Productions of all provinces (tons)", title = "4.1 Focused varieties, Focused regions - Sum Production")
+RegTHRiceYieldpnv10yrs %>% filter(variety %in% focusedvar) %>% group_by(region, variety, year) %>% summarise(totProd = sum(plantingarea)) %>% filter(region %in% c("Central", "North", "NorthEast")) %>%
+  ggplot() +
+  geom_line(mapping = aes(x = year, y = totProd, col = variety)) +
+  geom_point(mapping = aes(x = year, y = totProd, col = variety)) +
+  facet_wrap(~region) +
+  theme(axis.text.x = element_text(angle = 45)) +
+  labs(y = "Sum Planting Area of all provinces (rais)", title = "4.2 Focused varieties, Focused regions - Sum Planting Area")
+```
+* From 3.1 and 3.2, NorthEast, Central and North planted and produced dominant amount of some varieties that are in our focus, so we looked into these three regions for the focused varieties in fig 4.1-4.2. 
+* From fig 4.1-4.2, Central and North produced and grew non-photoperiod sensitive rice the most, while in NorthEast, KDML105 and RD6 were much more produced and grown. PTT1 was most produced and planted in Central. 
+
+* These show that if we are to choose the regions of study for yield modelling and practice improvement, the best options to potentially obtain a large number of data and to produce the most impact from the study are the following:
+Central or North provinces for non-photoperiod sensitive rice, Central for PTT1 and Northeast for KDML105 and RD6.
+
+
+
+# Part C: Trend of Yield
+
+## Trend of all varieties, whole-country
+```{r}
+RegTHRiceYieldpnv10yrs %>% group_by(variety, year) %>% summarise(meanY = mean(YieldHA)) %>%
+  ggplot() +
+  geom_line(mapping = aes(x = year, y = meanY, col = variety)) +
+  geom_point(mapping = aes(x = year, y = meanY, col = variety)) +
+  theme(axis.text.x = element_text(angle = 45)) +
+  scale_y_continuous(breaks = seq(300, 800, by = 50)) +
+  labs(y = "Mean Yield of all provinces (tons)",  title = "5. All varieties - Mean Yield")
+#table below show the number from the lastest year (2021)
+RegTHRiceYieldpnv10yrs %>% filter(year == 2021) %>%  group_by(variety) %>% summarise(meanY = mean(YieldHA))
+```
+
+* In general, for all years, the yields of non-photosensitive rice (ChaiNat1, PTT1, KhlongLuang1, all SuphanBuri's and NonPhotoSens) have been higher than that of photosensitive rice (RD6, RD15, KDML105, and PhotoSens), as expected.  
+* From fig 5, SuphanBuri1 is the highest-yielding variety, followed by PTT1, for all years except 2012 where SuphanBuriAromatic exceeded PTT1. 
+* KDML105, despite being the most planted and produced (in tons), yielded almost the lowest among all at < 425 kg/rais for all years (only beats Native Rice and RD15 in some years). Being the photosensitive rice as KDML105, RD6 also gave low yields, never more than 450 kg/rai. Consistently over years, however, RD6 always beat KDML105's yields.
+* Yields of SuphanBuriAromatic, SuphanBuri60,and ChaiNat1 were highly fluctuated, and less so for PTT1. There have been approximately downward trend for some varieties, e.g. SuphanBuri1 and NonPhotoSens.
+
+* The table shows average of yields of all planting provinces in 2021, KDML105 only gave the average of 403 and RD6 only gave 422 kg/rai, while PTT1 gave 591 kg/rai. SuphanBuri1 gave the highest yield at 627 kg/rai. Other PhotoSens yielded 469 and other Non PhotoSens yielded 528 kg/rai.
+
+
+## Trend of focused variety, regional
+```{r}
+RegTHRiceYieldpnv10yrs %>% filter(variety %in% focusedvar) %>% group_by(variety, region, year) %>% summarise(MeanY = mean(YieldHA))  %>% 
+  ggplot() +
+  geom_line(mapping = aes(x = year, y = MeanY, col = variety)) +
+  facet_wrap(~region) +
+  geom_point(mapping = aes(x = year, y = MeanY, col = variety)) +
+  theme(axis.text.x = element_text(angle = 45)) +
+  labs(y = "Mean yield of all provinces (tons)", title = "6 Focused varieties, all regions - Mean yield")
+```
+
+* Separated into regional yields, as expected, in all regions, KDML105 and RD6 gave the lower yields than PTT1 and other NonPhotoSens. Central and North, where PTT1 and NonPhotoSens was grown the most, gave best yields of PTT1 and NonPhotoSens. 
+* One major takeaway is that NE is the regions where all these varieties were doing worst (except KDML105 planted in Southern part that gave the worst yields of less than 350 kg/rai): RD6 and KDML105 were lower in yield than the other two as well. West, although not a major grower or producer, gave impressive yields of NonPhotoSens and PTT1.
+
+* These again show that NE is the area that suffer from non-effective agricultural practices, despite being the top grower and producer, especially for KDML105 and RD6 farmers. KDML105, being sold at a higher price than other varities, may be chosen because of economic return by the NE farmers, so they may still have profit, but improving yields even 1% in these areas would lead to a high impact due to a large planting area in NE. On the other hand, Central and North are two best producers for all focused varieties, so these can be used as the "Model regions" for NE to follow the management that works well there. 
+
+
+# Part D: All-time Popularity, Production, Yield
+We will search for the order of top provinces in each aspect for each variety (Top grower, Top producer, Best producer). The stats are calculate from all years, aka means from 10 years, from 2012-2021.
+
+## Creating Functions 
+Top grower of each variety = province/region that has the largest area (in rai) for that variety.
+Top producer of each variety = province/region that has the highest production (in ton) for that variety.
+Best producer of each variety = province/region that has the most yield from harvested area (in kg/rai) for that variety. The functions calculate the means of all years (2012-2021).
+
+```{r}
+FindTopGrower <-
+  function(var, scale,  yr = "all",fromtop = T) {
+    #var is variety, scale can be provincial (1) or regional (2), n is the return size of top list
+    if (var == "all") {
+      current <-
+          RegTHRiceYieldpnv10yrs   
+    }else if (var %ni% varlist) {
+      print(
+        "check the spelling of your variety. They must be one of the following: NativeRice, RD6, RD15, KDML105, SuphanBuri60, PhotoSens, NonPhotoSens, ChaiNat1, PTT1, SuphanBuri1, SuphanAromatic, KhlongLuang1"
+      )
+    } else{
+      current <-
+          RegTHRiceYieldpnv10yrs %>% filter(variety == var)
+      print(paste0(nrow(current), " is the row number after variety is filtered"))
+    }
+    
+    if (yr != "all"){
+      current <- current %>% filter(year == yr)
+      print("year is filtered")
+      print(paste0(nrow(current), " is the row number after year is filtered"))
+    }
+      
+    if (scale == 1) {
+        TopProvince <-
+          current %>% group_by(province, region) %>% summarise(MeanPA = mean(plantingarea))
+        return(TopProvince[order(TopProvince$MeanPA, decreasing = fromtop), ])
+    } else if (scale == 2) {
+        TopRegion <-
+          current %>% group_by(region, year) %>% summarise(sumPA = sum(plantingarea)) %>% group_by(region) %>% summarise(MeansumPA = mean(sumPA))
+        return(TopRegion[order(TopRegion$MeansumPA, decreasing = fromtop), ])
+    } else{
+        print("Check that the scale is either provincial (1) or regional (2).")
+    }
+    
+  }
+#test
+FindTopGrower("KDML105", scale = 1, "all")
+FindTopGrower("all", scale = 2, "all")
+FindTopGrower("all", scale = 1, "all")
+# FindTopGrower("wrongvariety", scale = 2)
+# FindTopGrower("KDML105", scale = 3)
+```
+
+```{r}
+FindTopProducer <-
+  function(var, scale,  yr = "all",fromtop = T) {
+    #var is variety, scale can be provincial (1) or regional (2), n is the return size of top list
+    if (var == "all") {
+      current <-
+          RegTHRiceYieldpnv10yrs   
+    }else if (var %ni% varlist) {
+      print(
+        "check the spelling of your variety. They must be one of the following: NativeRice, RD6, RD15, KDML105, SuphanBuri60, PhotoSens, NonPhotoSens, ChaiNat1, PTT1, SuphanBuri1, SuphanAromatic, KhlongLuang1"
+      )
+    } else{
+      current <-
+          RegTHRiceYieldpnv10yrs %>% filter(variety == var)
+      print(paste0(nrow(current), " is the row number after variety is filtered"))
+    }
+    
+    if (yr != "all"){
+      current <- current %>% filter(year == yr)
+      print("year is filtered")
+      print(paste0(nrow(current), " is the row number after year is filtered"))
+    }
+      
+    if (scale == 1) {
+        TopProvince <-
+          current %>% group_by(province, region) %>% summarise(MeanProd = mean(production))
+        print(paste0(nrow(current), " is the row number after whne the scale is selected"))
+        return(TopProvince[order(TopProvince$MeanProd, decreasing = fromtop), ])
+      } else if (scale == 2) {
+        TopRegion <-
+          current %>% group_by(region, year) %>% summarise(sumProd = sum(production)) %>% group_by(region) %>% summarise(MeansumProd = mean(sumProd))
+        return(TopRegion[order(TopRegion$MeansumProd, decreasing = fromtop), ])
+      } else{
+        print("Check that the scale is either provincial (1) or regional (2).")
+      }
+    
+    
+  }
+#test
+FindTopProducer("all", scale = 1, yr = "all")
+FindTopProducer("all", scale = 2, yr =  "all")
+FindTopProducer("all", scale = 1, yr =  2021)
+
+FindTopProducer("KDML105", scale = 1, yr =  "all")
+FindTopProducer("KDML105", scale = 1, yr =  2021) #year filter is not working
+FindTopProducer("KDML105", scale = 2, yr =  "all")
+FindTopProducer("KDML105", scale = 2, yr =  2021)
+
+
+```
+
+```{r}
+FindBestProducer <-
+  function(var, scale,  yr = "all",  fromtop = T) {
+    #var is variety and R is region, only needed when P == T
+    if (var == "all") {
+      current <-
+          RegTHRiceYieldpnv10yrs
+      print(paste0(nrow(current), " is the row number after variety is filtered"))
+    }else if (var %ni% varlist) {
+      print(
+        "check the spelling of your variety. They must be one of the following: NativeRice, RD6, RD15, KDML105, SuphanBuri60, PhotoSens, NonPhotoSens, ChaiNat1, PTT1, SuphanBuri1, SuphanAromatic, KhlongLuang1"
+      )
+    } else{
+      current <-
+          RegTHRiceYieldpnv10yrs %>% filter(variety == var)
+      print(paste0(nrow(current), " is the row number after variety is filtered"))
+    }
+    
+    if (yr != "all"){
+      current <- current %>% filter(year == yr)
+      print(paste0(nrow(current), " is the row number after year is filtered"))
+    }
+      
+      
+    if (scale == 2) {
+        BestRegion <-
+          current %>% group_by(region) %>% summarise(MeanY = mean(YieldHA), sd = sd(YieldHA), no = n())
+        return(BestRegion[order(BestRegion$MeanY, decreasing = fromtop),])
+      } else  if (scale == 1) {
+        BestProvince <-
+          current %>% group_by(province, region) %>% summarise(MeanY = mean(YieldHA), sd = sd(YieldHA), no = n())
+        return(BestProvince[order(BestProvince$MeanY, decreasing = fromtop),])
+      } else {
+        print("Check that the scale is either provincial (1) or regional (2).")
+      }
+    
+  }
+
+FindBestProducer("all", scale = 1, yr = "all")
+FindBestProducer("all", scale = 2, yr =  "all")
+FindBestProducer("all", scale = 1,  yr =  2021)
+
+FindBestProducer("KDML105", scale = 1, T, yr =  "all")
+FindBestProducer("KDML105", scale = 1, T, yr =  2021) #year filter is not working
+FindBestProducer("KDML105", scale = 2, yr =  "all")
+FindBestProducer("KDML105", scale = 2, yr =  2021)
+
+```
+
+## Used with focused varieties
+```{r}
+FourAttributes <- function(var, scale, yr = "all"){
+  Ans <- NULL
+  Ans$TopGrower <- FindTopGrower(var, scale, yr)
+  Ans$TopProducer <- FindTopProducer(var, scale, yr)
+  Ans$BestProducer <- FindBestProducer(var, scale, yr)
+  Ans$WorstProducer <- FindBestProducer(var, scale, yr,fromtop = F)
+  print(paste0("For ", var , ": TopGrower = ",Ans$TopGrower[1,"province"] ,", TopProducer = ",Ans$TopProducer[1,"province"] , ", BestProducer = ",Ans$BestProducer[1,"province"] ))
+  return(Ans)
+}
+PTT1list <- FourAttributes("PTT1", scale = 1)
+KDML105list <- FourAttributes("KDML105", scale = 1)
+RD6list <- FourAttributes("RD6", scale = 1)
+NonPhotoSenslist <- FourAttributes("NonPhotoSens", scale = 1)
+Allricevarlist <- FourAttributes("all", scale = 1)
+```
+
+* Based on the 10-year mean planting area, the top grower (absolute area in rai) of NonPhotoSens (representative of RD85), PTT1, KDML105, and RD6 were NakhonSawan (Central), ChaiNat (Central), NakhonRatchasima (NorthEast), and KhonKaen (NorthEast), respectively. 
+* Based on the 10-year mean production, the top producer of NonPhotoSens, PTT1, KDML105, and RD6 were SuphanBuri (Central), ChaiNat (Central), SiSaKet (NorthEast) and UdonThani (NorthEast), respectively.
+* Based on the 10-year mean yield, the best producer of NonPhotoSens, PTT1, KDML105, and RD6 were SamutPrakan, SuphanBuri, SamutSakhon (all Central), and ChiangMai (North)
+
+## A position of top producers or growers in the bestproducer list
+It would be interesting to see the rank of the top producers or growers in the list of best producer for each variety.
+```{r}
+#Function ot find a position of a province in the bestproducer list
+FindPosition <- function(listname,var, queryprovince){
+  listform <- listname(var,scale = 1, yr = "all")
+  position <- which(listform$province == queryprovince)
+  focusVal <- names(listform)[3]
+  print(paste0( queryprovince, " is at ", position, " in the list of bestproducer of ", var, " with the yield ", listform[focusVal][position,], " kg/rai" ))
+}
+FindPosition(FindBestProducer, "PTT1", "ChaiNat") #11th best
+FindPosition(FindBestProducer, "NonPhotoSens", "NakhonSawan") #30th best
+FindPosition(FindBestProducer, "KDML105", "NakhonRatchasima") #52th best -> so 26th from the bottom 
+FindPosition(FindBestProducer, "KDML105", "SiSaKet") #47th best -> so 31st from the bottom 
+FindPosition(FindBestProducer, "KDML105", "UbonRatchathani") #54th best
+FindPosition(FindBestProducer, "RD6", "UdonThani") #29th best
+FindPosition(FindBestProducer, "RD6", "KhonKaen") #39th  best
+
+```
+
+None of the top growers or producers were the best producers. Their yields could be as low as 52th on the best producer list (list formed based on yield), and this is the case of NakhonRatchasima for KDML105.
+
+
+# Caution - high uncertainty in data, resulting from how they collected them
+* Firstly, no written documents about their data collection process online in OAE website
+* Yield is from visiting randomly-selected fields in each province and interview the farmer asking the yield from the last season
+  * Scale up to obtain yield at province level using the accumulated harvesting area of that province
+  * Ref: quoting a data collector from OAE
+* Planting area and Harvesting area is from DOAE farmer registration (quoting a data collector from OAE)
+  * Good point: online form, so no error related to transferring analog to digital data
+  * Bad point:
+    * The time window of registration is 15-60 day after planting
+    * Harvesting area is to be filled within those days  -> this is before rice matures, so it is purely an estimate
+    * Admitted by DOAE person, some farmers manipulated the data
+    * Ref: https://efarmer.doae.go.th/manaul/eform_manaul_v3.pdf  
+
+
+--- End of Report ---

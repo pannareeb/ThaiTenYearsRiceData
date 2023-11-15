@@ -1,0 +1,848 @@
+year,province(ENG),variety ENG,Planting area (rai),Harvested area (rai),Production (ton),Yield by Planting area (kg/rai),Yield by Harvested area (kg/rai),Portion of planting in province (percent)
+2019,Chiang Rai,NativeRice,66006,58297,22848,346,392,5.11
+2019,Chiang Rai,RD6,559426,483791,256445,458,530,43.34
+2019,Chiang Rai,RD15,146572,130579,62894,429,482,11.36
+2019,Chiang Rai,KDML105,149853,136418,66953,447,491,11.61
+2019,Chiang Rai,SuphanBuri60,4616,4417,2401,520,544,0.36
+2019,Chiang Rai,PhotoperiodSensitiveRice,99713,95126,62937,631,662,7.73
+2019,Chiang Rai,NonPhotoperiodSensitiveRice ,199291,185626,117890,592,635,15.44
+2019,Chiang Rai,ChaiNat1,311,311,120,386,386,0.02
+2019,Chiang Rai,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Chiang Rai,PTT1,59748,55990,39644,664,708,4.63
+2019,Chiang Rai,SuphanBuri1,5210,4794,2645,508,552,0.4
+2019,Phayao,NativeRice,14983,14768,6111,408,414,2.38
+2019,Phayao,RD6,178743,174711,83131,465,476,28.4
+2019,Phayao,RD15,80740,75504,35513,440,470,12.83
+2019,Phayao,KDML105,291286,285403,130411,448,457,46.29
+2019,Phayao,SuphanBuri60,0,0,0,0,0,0
+2019,Phayao,PhotoperiodSensitiveRice,25458,25012,15247,599,610,4.05
+2019,Phayao,NonPhotoperiodSensitiveRice ,36058,34521,21726,603,629,5.73
+2019,Phayao,ChaiNat1,264,264,107,405,405,0.04
+2019,Phayao,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Phayao,PTT1,1743,1695,855,491,504,0.28
+2019,Phayao,SuphanBuri1,0,0,0,0,0,0
+2019,Lampang,NativeRice,4716,4638,1455,309,314,1.07
+2019,Lampang,RD6,211121,209313,104498,495,499,48.11
+2019,Lampang,RD15,640,640,254,397,397,0.15
+2019,Lampang,KDML105,55979,55589,27219,486,490,12.76
+2019,Lampang,SuphanBuri60,0,0,0,0,0,0
+2019,Lampang,PhotoperiodSensitiveRice,20528,20352,10791,526,530,4.68
+2019,Lampang,NonPhotoperiodSensitiveRice ,144735,142833,78462,542,549,32.98
+2019,Lampang,ChaiNat1,0,0,0,0,0,0
+2019,Lampang,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Lampang,PTT1,1114,1114,583,523,523,0.25
+2019,Lampang,SuphanBuri1,0,0,0,0,0,0
+2019,Lamphun,NativeRice,3169,3156,1427,450,452,2.98
+2019,Lamphun,RD6,40721,40605,24252,596,597,38.37
+2019,Lamphun,RD15,126,126,55,437,437,0.12
+2019,Lamphun,KDML105,4969,4964,2721,548,548,4.68
+2019,Lamphun,SuphanBuri60,0,0,0,0,0,0
+2019,Lamphun,PhotoperiodSensitiveRice,8611,8527,4794,557,562,8.11
+2019,Lamphun,NonPhotoperiodSensitiveRice ,48371,48249,30707,635,636,45.58
+2019,Lamphun,ChaiNat1,0,0,0,0,0,0
+2019,Lamphun,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Lamphun,PTT1,167,167,88,527,527,0.16
+2019,Lamphun,SuphanBuri1,0,0,0,0,0,0
+2019,Chiang Mai,NativeRice,118833,117617,51226,431,436,23.37
+2019,Chiang Mai,RD6,53283,52933,33945,637,641,10.48
+2019,Chiang Mai,RD15,761,761,430,565,565,0.15
+2019,Chiang Mai,KDML105,30231,30136,16491,545,547,5.95
+2019,Chiang Mai,SuphanBuri60,0,0,0,0,0,0
+2019,Chiang Mai,PhotoperiodSensitiveRice,64858,64781,40170,619,620,12.75
+2019,Chiang Mai,NonPhotoperiodSensitiveRice ,237285,236215,159610,673,676,46.66
+2019,Chiang Mai,ChaiNat1,0,0,0,0,0,0
+2019,Chiang Mai,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Chiang Mai,PTT1,1755,1739,1149,655,661,0.35
+2019,Chiang Mai,SuphanBuri1,1500,1500,802,535,535,0.29
+2019,Mae Hong Son,NativeRice,88962,88261,30473,343,345,44.79
+2019,Mae Hong Son,RD6,1773,1731,956,539,552,0.89
+2019,Mae Hong Son,RD15,0,0,0,0,0,0
+2019,Mae Hong Son,KDML105,36891,36681,16644,451,454,18.57
+2019,Mae Hong Son,SuphanBuri60,0,0,0,0,0,0
+2019,Mae Hong Son,PhotoperiodSensitiveRice,4449,4404,1965,442,446,2.24
+2019,Mae Hong Son,NonPhotoperiodSensitiveRice ,66573,66067,32391,487,490,33.51
+2019,Mae Hong Son,ChaiNat1,0,0,0,0,0,0
+2019,Mae Hong Son,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Mae Hong Son,PTT1,0,0,0,0,0,0
+2019,Mae Hong Son,SuphanBuri1,0,0,0,0,0,0
+2019,Tak,NativeRice,124943,124208,42094,337,339,34.8
+2019,Tak,RD6,14222,14222,6400,450,450,3.96
+2019,Tak,RD15,143,143,59,413,413,0.04
+2019,Tak,KDML105,126547,124005,51893,410,418,35.24
+2019,Tak,SuphanBuri60,0,0,0,0,0,0
+2019,Tak,PhotoperiodSensitiveRice,8750,8710,3535,404,406,2.44
+2019,Tak,NonPhotoperiodSensitiveRice ,66171,65072,33883,512,521,18.43
+2019,Tak,ChaiNat1,9274,9237,5209,562,564,2.58
+2019,Tak,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Tak,PTT1,7801,7725,4298,551,556,2.17
+2019,Tak,SuphanBuri1,1234,1214,687,557,566,0.34
+2019,Kamphaeng Phet,NativeRice,3902,3882,1272,326,328,0.35
+2019,Kamphaeng Phet,RD6,5950,5936,2649,445,446,0.52
+2019,Kamphaeng Phet,RD15,1976,1976,705,357,357,0.17
+2019,Kamphaeng Phet,KDML105,98692,98136,43312,439,441,8.63
+2019,Kamphaeng Phet,SuphanBuri60,2302,2281,1109,482,486,0.2
+2019,Kamphaeng Phet,PhotoperiodSensitiveRice,12634,12576,5951,471,473,1.1
+2019,Kamphaeng Phet,NonPhotoperiodSensitiveRice ,973763,970740,568831,584,586,85.11
+2019,Kamphaeng Phet,ChaiNat1,4248,4234,2050,483,484,0.37
+2019,Kamphaeng Phet,SupanburiAromaticRice,1730,1730,840,486,486,0.15
+2019,Kamphaeng Phet,PTT1,21482,21451,12548,584,585,1.88
+2019,Kamphaeng Phet,SuphanBuri1,17384,17338,9871,568,569,1.52
+2019,Sukhothai,NativeRice,17373,16897,5455,314,323,1.57
+2019,Sukhothai,RD6,15843,15155,5049,319,333,1.44
+2019,Sukhothai,RD15,451,431,144,319,334,0.04
+2019,Sukhothai,KDML105,117403,108491,48030,409,443,10.67
+2019,Sukhothai,SuphanBuri60,25155,24522,12119,482,494,2.29
+2019,Sukhothai,PhotoperiodSensitiveRice,7923,7860,3543,447,451,0.72
+2019,Sukhothai,NonPhotoperiodSensitiveRice ,794659,761369,425721,536,559,72.21
+2019,Sukhothai,ChaiNat1,18549,18139,10424,562,575,1.69
+2019,Sukhothai,SupanburiAromaticRice,321,308,133,414,432,0.03
+2019,Sukhothai,PTT1,59147,55866,35941,608,643,5.37
+2019,Sukhothai,SuphanBuri1,43640,42744,25532,585,597,3.97
+2019,Phrae,NativeRice,1982,1975,824,416,417,0.66
+2019,Phrae,RD6,56104,55948,33324,594,596,18.81
+2019,Phrae,RD15,259,259,118,456,456,0.09
+2019,Phrae,KDML105,20689,20644,10751,520,521,6.94
+2019,Phrae,SuphanBuri60,0,0,0,0,0,0
+2019,Phrae,PhotoperiodSensitiveRice,50544,50511,27540,545,545,16.95
+2019,Phrae,NonPhotoperiodSensitiveRice ,168629,167452,95044,564,568,56.55
+2019,Phrae,ChaiNat1,0,0,0,0,0,0
+2019,Phrae,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Phrae,PTT1,0,0,0,0,0,0
+2019,Phrae,SuphanBuri1,0,0,0,0,0,0
+2019,Nan,NativeRice,71750,70773,24909,347,352,23.25
+2019,Nan,RD6,71778,71289,37127,517,521,23.26
+2019,Nan,RD15,411,411,183,445,445,0.13
+2019,Nan,KDML105,7101,7074,3503,493,495,2.3
+2019,Nan,SuphanBuri60,0,0,0,0,0,0
+2019,Nan,PhotoperiodSensitiveRice,49852,49679,27980,561,563,16.15
+2019,Nan,NonPhotoperiodSensitiveRice ,107746,106187,63048,585,594,34.91
+2019,Nan,ChaiNat1,0,0,0,0,0,0
+2019,Nan,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Nan,PTT1,0,0,0,0,0,0
+2019,Nan,SuphanBuri1,0,0,0,0,0,0
+2019,Uttaradit,NativeRice,19401,17525,7447,384,425,3.33
+2019,Uttaradit,RD6,31556,29156,13116,416,450,5.41
+2019,Uttaradit,RD15,562,562,274,488,488,0.1
+2019,Uttaradit,KDML105,55581,50345,24059,433,478,9.54
+2019,Uttaradit,SuphanBuri60,2459,2250,1014,412,451,0.42
+2019,Uttaradit,PhotoperiodSensitiveRice,10453,9672,4968,475,514,1.79
+2019,Uttaradit,NonPhotoperiodSensitiveRice ,248060,225848,137450,554,609,42.56
+2019,Uttaradit,ChaiNat1,1275,1245,648,508,520,0.22
+2019,Uttaradit,SupanburiAromaticRice,1117,1077,512,458,475,0.19
+2019,Uttaradit,PTT1,181957,162638,106140,583,653,31.22
+2019,Uttaradit,SuphanBuri1,30428,28714,17406,572,606,5.22
+2019,Phitsanulok,NativeRice,12050,11474,4218,350,368,0.86
+2019,Phitsanulok,RD6,62830,59651,28893,460,484,4.51
+2019,Phitsanulok,RD15,2401,2356,1023,426,434,0.17
+2019,Phitsanulok,KDML105,269832,255984,121108,449,473,19.39
+2019,Phitsanulok,SuphanBuri60,9118,8886,4736,519,533,0.66
+2019,Phitsanulok,PhotoperiodSensitiveRice,52554,50841,23238,442,457,3.78
+2019,Phitsanulok,NonPhotoperiodSensitiveRice ,877067,850260,526548,600,619,63.02
+2019,Phitsanulok,ChaiNat1,31807,31384,19078,600,608,2.29
+2019,Phitsanulok,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Phitsanulok,PTT1,54934,52841,33922,618,642,3.95
+2019,Phitsanulok,SuphanBuri1,19133,18259,11718,612,642,1.37
+2019,Phichit,NativeRice,13684,13452,6296,460,468,0.79
+2019,Phichit,RD6,0,0,0,0,0,0
+2019,Phichit,RD15,8923,8557,4501,504,526,0.52
+2019,Phichit,KDML105,503473,481166,234576,466,488,29.11
+2019,Phichit,SuphanBuri60,18156,18012,12591,693,699,1.05
+2019,Phichit,PhotoperiodSensitiveRice,63850,60558,37783,592,624,3.69
+2019,Phichit,NonPhotoperiodSensitiveRice ,1030441,996610,678365,658,681,59.58
+2019,Phichit,ChaiNat1,10018,9743,6814,680,699,0.58
+2019,Phichit,SupanburiAromaticRice,1789,1735,1212,677,699,0.1
+2019,Phichit,PTT1,24467,24248,16074,657,663,1.41
+2019,Phichit,SuphanBuri1,54782,53514,34898,637,652,3.17
+2019,Nakhon Sawan,NativeRice,18064,16901,7475,414,442,0.77
+2019,Nakhon Sawan,RD6,3668,3567,1622,442,455,0.15
+2019,Nakhon Sawan,RD15,0,0,0,0,0,0
+2019,Nakhon Sawan,KDML105,583629,532432,279508,479,525,24.62
+2019,Nakhon Sawan,SuphanBuri60,7734,7344,3623,468,493,0.33
+2019,Nakhon Sawan,PhotoperiodSensitiveRice,27987,26719,11788,421,441,1.18
+2019,Nakhon Sawan,NonPhotoperiodSensitiveRice ,1475037,1395951,817718,554,586,62.23
+2019,Nakhon Sawan,ChaiNat1,69179,64894,37639,544,580,2.92
+2019,Nakhon Sawan,SupanburiAromaticRice,40384,38405,22334,553,582,1.7
+2019,Nakhon Sawan,PTT1,73404,69065,46728,637,677,3.1
+2019,Nakhon Sawan,SuphanBuri1,71130,67545,41976,590,621,3
+2019,Uthai Thani,NativeRice,5741,5045,1989,346,394,1.11
+2019,Uthai Thani,RD6,1483,1391,448,302,322,0.29
+2019,Uthai Thani,RD15,0,0,0,0,0,0
+2019,Uthai Thani,KDML105,27691,17743,8433,305,475,5.37
+2019,Uthai Thani,SuphanBuri60,2764,2502,905,327,362,0.54
+2019,Uthai Thani,PhotoperiodSensitiveRice,5554,4384,1660,299,379,1.08
+2019,Uthai Thani,NonPhotoperiodSensitiveRice ,408689,261437,171794,420,657,79.27
+2019,Uthai Thani,ChaiNat1,15312,13834,7258,474,525,2.97
+2019,Uthai Thani,SupanburiAromaticRice,1623,1527,656,404,430,0.31
+2019,Uthai Thani,PTT1,42871,28890,19455,454,673,8.31
+2019,Uthai Thani,SuphanBuri1,3861,3503,1426,369,407,0.75
+2019,Phetchabun,NativeRice,43040,42149,15452,359,367,3.7
+2019,Phetchabun,RD6,38865,37926,20739,534,547,3.34
+2019,Phetchabun,RD15,77,77,25,325,325,0.01
+2019,Phetchabun,KDML105,254232,239195,106781,420,446,21.84
+2019,Phetchabun,SuphanBuri60,9208,8700,4411,479,507,0.79
+2019,Phetchabun,PhotoperiodSensitiveRice,115494,112531,56280,487,500,9.93
+2019,Phetchabun,NonPhotoperiodSensitiveRice ,638679,603150,375601,588,623,54.9
+2019,Phetchabun,ChaiNat1,41863,40747,27070,647,664,3.6
+2019,Phetchabun,SupanburiAromaticRice,38,38,16,421,421,0.01
+2019,Phetchabun,PTT1,17731,16848,10937,617,649,1.52
+2019,Phetchabun,SuphanBuri1,4184,4035,2551,610,632,0.36
+2019,Loei,NativeRice,47244,46153,14085,298,305,11.05
+2019,Loei,RD6,279431,259227,86731,310,335,65.42
+2019,Loei,RD15,0,0,0,0,0,0
+2019,Loei,KDML105,8702,8391,2527,290,301,2.04
+2019,Loei,SuphanBuri60,0,0,0,0,0,0
+2019,Loei,PhotoperiodSensitiveRice,68725,66812,24753,360,370,16.09
+2019,Loei,NonPhotoperiodSensitiveRice ,23051,22097,7609,330,344,5.4
+2019,Loei,ChaiNat1,0,0,0,0,0,0
+2019,Loei,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Loei,PTT1,0,0,0,0,0,0
+2019,Loei,SuphanBuri1,0,0,0,0,0,0
+2019,Nong Bua Lam Phu,NativeRice,4469,4367,1424,319,326,0.66
+2019,Nong Bua Lam Phu,RD6,505969,474300,158633,314,334,74.54
+2019,Nong Bua Lam Phu,RD15,20360,19607,6645,326,339,3
+2019,Nong Bua Lam Phu,KDML105,138931,129755,42390,305,327,20.47
+2019,Nong Bua Lam Phu,SuphanBuri60,0,0,0,0,0,0
+2019,Nong Bua Lam Phu,PhotoperiodSensitiveRice,4155,3965,1515,365,382,0.61
+2019,Nong Bua Lam Phu,NonPhotoperiodSensitiveRice ,4872,4637,1772,364,382,0.72
+2019,Nong Bua Lam Phu,ChaiNat1,0,0,0,0,0,0
+2019,Nong Bua Lam Phu,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Nong Bua Lam Phu,PTT1,0,0,0,0,0,0
+2019,Nong Bua Lam Phu,SuphanBuri1,0,0,0,0,0,0
+2019,Udon Thani,NativeRice,11961,11403,5157,431,452,0.61
+2019,Udon Thani,RD6,1468932,1419022,501077,341,353,76.02
+2019,Udon Thani,RD15,102936,100581,34969,340,348,5.33
+2019,Udon Thani,KDML105,310161,301573,111996,361,371,16.05
+2019,Udon Thani,SuphanBuri60,0,0,0,0,0,0
+2019,Udon Thani,PhotoperiodSensitiveRice,30731,29593,10503,342,355,1.59
+2019,Udon Thani,NonPhotoperiodSensitiveRice ,7660,7450,3635,475,488,0.4
+2019,Udon Thani,ChaiNat1,0,0,0,0,0,0
+2019,Udon Thani,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Udon Thani,PTT1,0,0,0,0,0,0
+2019,Udon Thani,SuphanBuri1,0,0,0,0,0,0
+2019,Nong Khai,NativeRice,3887,3791,1254,323,331,0.69
+2019,Nong Khai,RD6,360446,334725,116456,323,348,63.74
+2019,Nong Khai,RD15,27108,26374,8961,331,340,4.79
+2019,Nong Khai,KDML105,110060,102969,36933,336,359,19.46
+2019,Nong Khai,SuphanBuri60,0,0,0,0,0,0
+2019,Nong Khai,PhotoperiodSensitiveRice,45088,42060,15133,336,360,7.97
+2019,Nong Khai,NonPhotoperiodSensitiveRice ,18946,18439,6494,343,352,3.35
+2019,Nong Khai,ChaiNat1,0,0,0,0,0,0
+2019,Nong Khai,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Nong Khai,PTT1,0,0,0,0,0,0
+2019,Nong Khai,SuphanBuri1,0,0,0,0,0,0
+2019,Bueng Kan,NativeRice,1506,1417,433,288,306,0.31
+2019,Bueng Kan,RD6,393516,365659,114085,290,312,80.61
+2019,Bueng Kan,RD15,8382,7482,2368,283,316,1.72
+2019,Bueng Kan,KDML105,67698,64597,19651,290,304,13.87
+2019,Bueng Kan,SuphanBuri60,0,0,0,0,0,0
+2019,Bueng Kan,PhotoperiodSensitiveRice,13724,12047,3890,283,323,2.81
+2019,Bueng Kan,NonPhotoperiodSensitiveRice ,3318,2959,926,279,313,0.68
+2019,Bueng Kan,ChaiNat1,0,0,0,0,0,0
+2019,Bueng Kan,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Bueng Kan,PTT1,0,0,0,0,0,0
+2019,Bueng Kan,SuphanBuri1,0,0,0,0,0,0
+2019,Sakon Nakhon,NativeRice,23995,22663,6637,277,293,1.1
+2019,Sakon Nakhon,RD6,1467879,1401178,468518,319,334,67.94
+2019,Sakon Nakhon,RD15,117712,110607,36306,308,328,5.45
+2019,Sakon Nakhon,KDML105,460378,438579,147618,321,337,21.31
+2019,Sakon Nakhon,SuphanBuri60,9737,9319,2755,283,296,0.45
+2019,Sakon Nakhon,PhotoperiodSensitiveRice,51372,48905,15326,298,313,2.38
+2019,Sakon Nakhon,NonPhotoperiodSensitiveRice ,29498,28166,9075,308,322,1.37
+2019,Sakon Nakhon,ChaiNat1,0,0,0,0,0,0
+2019,Sakon Nakhon,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Sakon Nakhon,PTT1,0,0,0,0,0,0
+2019,Sakon Nakhon,SuphanBuri1,0,0,0,0,0,0
+2019,Nakhon Phanom,NativeRice,26209,25824,7903,302,306,1.79
+2019,Nakhon Phanom,RD6,691651,684791,250595,362,366,47.58
+2019,Nakhon Phanom,RD15,65934,65324,21907,332,335,4.54
+2019,Nakhon Phanom,KDML105,607842,604677,200878,330,332,41.82
+2019,Nakhon Phanom,SuphanBuri60,0,0,0,0,0,0
+2019,Nakhon Phanom,PhotoperiodSensitiveRice,23267,22861,7775,334,340,1.6
+2019,Nakhon Phanom,NonPhotoperiodSensitiveRice ,37890,37389,15305,404,409,2.61
+2019,Nakhon Phanom,ChaiNat1,0,0,0,0,0,0
+2019,Nakhon Phanom,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Nakhon Phanom,PTT1,804,797,403,501,506,0.06
+2019,Nakhon Phanom,SuphanBuri1,0,0,0,0,0,0
+2019,Mukdahan,NativeRice,5665,5481,2300,406,420,1.2
+2019,Mukdahan,RD6,341658,333297,130437,382,391,71.84
+2019,Mukdahan,RD15,2109,2060,816,387,396,0.44
+2019,Mukdahan,KDML105,112668,109649,46736,415,426,23.69
+2019,Mukdahan,SuphanBuri60,0,0,0,0,0,0
+2019,Mukdahan,PhotoperiodSensitiveRice,8319,8078,3360,404,416,1.75
+2019,Mukdahan,NonPhotoperiodSensitiveRice ,3155,3072,1407,446,458,0.66
+2019,Mukdahan,ChaiNat1,55,55,24,436,436,0.01
+2019,Mukdahan,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Mukdahan,PTT1,1926,1926,851,442,442,0.41
+2019,Mukdahan,SuphanBuri1,0,0,0,0,0,0
+2019,Yasothon,NativeRice,5803,5416,1715,296,317,0.43
+2019,Yasothon,RD6,390354,316216,113224,290,358,29.17
+2019,Yasothon,RD15,37695,31940,11174,296,350,2.82
+2019,Yasothon,KDML105,868741,683953,248164,286,363,64.93
+2019,Yasothon,SuphanBuri60,0,0,0,0,0,0
+2019,Yasothon,PhotoperiodSensitiveRice,22054,21257,7704,349,362,1.65
+2019,Yasothon,NonPhotoperiodSensitiveRice ,12951,12287,3733,288,304,0.97
+2019,Yasothon,ChaiNat1,410,379,164,400,433,0.03
+2019,Yasothon,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Yasothon,PTT1,0,0,0,0,0,0
+2019,Yasothon,SuphanBuri1,0,0,0,0,0,0
+2019,Amnat Charoen,NativeRice,8923,8383,2961,332,353,0.86
+2019,Amnat Charoen,RD6,331293,314329,110562,334,352,31.51
+2019,Amnat Charoen,RD15,33992,32049,11013,324,344,3.23
+2019,Amnat Charoen,KDML105,673372,608972,211018,313,347,64.05
+2019,Amnat Charoen,SuphanBuri60,0,0,0,0,0,0
+2019,Amnat Charoen,PhotoperiodSensitiveRice,3057,3018,1040,340,345,0.29
+2019,Amnat Charoen,NonPhotoperiodSensitiveRice ,671,671,213,317,317,0.06
+2019,Amnat Charoen,ChaiNat1,0,0,0,0,0,0
+2019,Amnat Charoen,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Amnat Charoen,PTT1,0,0,0,0,0,0
+2019,Amnat Charoen,SuphanBuri1,0,0,0,0,0,0
+2019,Ubon Ratchathani,NativeRice,30609,27435,9436,308,344,0.78
+2019,Ubon Ratchathani,RD6,906418,826813,294984,325,357,22.99
+2019,Ubon Ratchathani,RD15,442360,429552,157768,357,367,11.22
+2019,Ubon Ratchathani,KDML105,2403100,2188267,787765,328,360,60.98
+2019,Ubon Ratchathani,SuphanBuri60,0,0,0,0,0,0
+2019,Ubon Ratchathani,PhotoperiodSensitiveRice,146419,137751,47966,328,348,3.72
+2019,Ubon Ratchathani,NonPhotoperiodSensitiveRice ,11885,11609,4525,381,390,0.3
+2019,Ubon Ratchathani,ChaiNat1,0,0,0,0,0,0
+2019,Ubon Ratchathani,SupanburiAromaticRice,67,67,23,343,343,0.01
+2019,Ubon Ratchathani,PTT1,0,0,0,0,0,0
+2019,Ubon Ratchathani,SuphanBuri1,0,0,0,0,0,0
+2019,Si Sa Ket,NativeRice,12145,11760,3825,315,325,0.4
+2019,Si Sa Ket,RD6,164048,155312,56195,343,362,5.46
+2019,Si Sa Ket,RD15,85084,83370,28565,336,343,2.83
+2019,Si Sa Ket,KDML105,2697891,2611268,900463,334,345,89.85
+2019,Si Sa Ket,SuphanBuri60,0,0,0,0,0,0
+2019,Si Sa Ket,PhotoperiodSensitiveRice,35326,34535,14168,401,410,1.18
+2019,Si Sa Ket,NonPhotoperiodSensitiveRice ,6812,6688,2720,399,407,0.23
+2019,Si Sa Ket,ChaiNat1,1208,1185,419,347,354,0.04
+2019,Si Sa Ket,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Si Sa Ket,PTT1,276,276,100,362,362,0.01
+2019,Si Sa Ket,SuphanBuri1,0,0,0,0,0,0
+2019,Surin,NativeRice,7954,7426,2578,324,347,0.26
+2019,Surin,RD6,3132,2956,1083,346,366,0.1
+2019,Surin,RD15,813995,742806,273597,336,368,26.45
+2019,Surin,KDML105,2244299,2120051,796369,355,376,72.94
+2019,Surin,SuphanBuri60,0,0,0,0,0,0
+2019,Surin,PhotoperiodSensitiveRice,6219,5955,2349,378,394,0.2
+2019,Surin,NonPhotoperiodSensitiveRice ,1392,1316,492,353,374,0.05
+2019,Surin,ChaiNat1,0,0,0,0,0,0
+2019,Surin,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Surin,PTT1,0,0,0,0,0,0
+2019,Surin,SuphanBuri1,0,0,0,0,0,0
+2019,Buri Ram,NativeRice,47531,40468,14633,308,362,1.65
+2019,Buri Ram,RD6,114719,97586,34873,304,357,3.98
+2019,Buri Ram,RD15,90487,75182,27873,308,371,3.14
+2019,Buri Ram,KDML105,2609831,2060493,711572,273,345,90.49
+2019,Buri Ram,SuphanBuri60,0,0,0,0,0,0
+2019,Buri Ram,PhotoperiodSensitiveRice,16410,15467,5238,319,339,0.57
+2019,Buri Ram,NonPhotoperiodSensitiveRice ,4672,4315,1411,302,327,0.16
+2019,Buri Ram,ChaiNat1,384,360,119,310,331,0.01
+2019,Buri Ram,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Buri Ram,PTT1,0,0,0,0,0,0
+2019,Buri Ram,SuphanBuri1,0,0,0,0,0,0
+2019,Maha Sarakham,NativeRice,2547,2360,1078,423,457,0.12
+2019,Maha Sarakham,RD6,987731,910363,331787,336,364,46.89
+2019,Maha Sarakham,RD15,46694,43958,15557,333,354,2.22
+2019,Maha Sarakham,KDML105,1054130,967518,343361,326,355,50.04
+2019,Maha Sarakham,SuphanBuri60,1058,923,366,346,397,0.05
+2019,Maha Sarakham,PhotoperiodSensitiveRice,4038,3759,1292,320,344,0.19
+2019,Maha Sarakham,NonPhotoperiodSensitiveRice ,8837,8324,3737,423,449,0.42
+2019,Maha Sarakham,ChaiNat1,1422,1376,621,437,451,0.07
+2019,Maha Sarakham,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Maha Sarakham,PTT1,0,0,0,0,0,0
+2019,Maha Sarakham,SuphanBuri1,0,0,0,0,0,0
+2019,Roi Et,NativeRice,8056,6440,2660,330,413,0.26
+2019,Roi Et,RD6,697375,555465,187945,270,338,22.6
+2019,Roi Et,RD15,22623,21036,6551,290,311,0.73
+2019,Roi Et,KDML105,2328307,1847014,638472,274,346,75.45
+2019,Roi Et,SuphanBuri60,0,0,0,0,0,0
+2019,Roi Et,PhotoperiodSensitiveRice,7405,7089,2381,322,336,0.24
+2019,Roi Et,NonPhotoperiodSensitiveRice ,18052,17315,6943,385,401,0.59
+2019,Roi Et,ChaiNat1,3910,3666,1420,363,387,0.13
+2019,Roi Et,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Roi Et,PTT1,0,0,0,0,0,0
+2019,Roi Et,SuphanBuri1,0,0,0,0,0,0
+2019,Kalasin,NativeRice,28049,26747,9931,354,371,1.89
+2019,Kalasin,RD6,981368,911449,336333,343,369,66.06
+2019,Kalasin,RD15,3623,3297,1161,320,352,0.24
+2019,Kalasin,KDML105,423244,388399,146332,346,377,28.49
+2019,Kalasin,SuphanBuri60,0,0,0,0,0,0
+2019,Kalasin,PhotoperiodSensitiveRice,8715,8204,3290,378,401,0.59
+2019,Kalasin,NonPhotoperiodSensitiveRice ,40006,39552,15933,398,403,2.69
+2019,Kalasin,ChaiNat1,630,630,227,360,360,0.04
+2019,Kalasin,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Kalasin,PTT1,0,0,0,0,0,0
+2019,Kalasin,SuphanBuri1,0,0,0,0,0,0
+2019,Khon Kaen,NativeRice,15773,13778,3593,228,261,0.66
+2019,Khon Kaen,RD6,1655638,1151947,371340,224,322,70.51
+2019,Khon Kaen,RD15,4637,4250,1176,254,277,0.2
+2019,Khon Kaen,KDML105,630130,428986,130744,207,305,26.83
+2019,Khon Kaen,SuphanBuri60,0,0,0,0,0,0
+2019,Khon Kaen,PhotoperiodSensitiveRice,6593,5437,1523,231,280,0.28
+2019,Khon Kaen,NonPhotoperiodSensitiveRice ,34179,29227,9195,269,315,1.46
+2019,Khon Kaen,ChaiNat1,1296,1168,300,231,257,0.06
+2019,Khon Kaen,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Khon Kaen,PTT1,0,0,0,0,0,0
+2019,Khon Kaen,SuphanBuri1,0,0,0,0,0,0
+2019,Chaiyaphum,NativeRice,77324,55574,16936,219,305,4.46
+2019,Chaiyaphum,RD6,650298,358324,129510,199,361,37.4
+2019,Chaiyaphum,RD15,5440,4840,1200,221,248,0.31
+2019,Chaiyaphum,KDML105,886268,469764,159250,180,339,50.98
+2019,Chaiyaphum,SuphanBuri60,0,0,0,0,0,0
+2019,Chaiyaphum,PhotoperiodSensitiveRice,99343,55821,23481,236,421,5.71
+2019,Chaiyaphum,NonPhotoperiodSensitiveRice ,18165,14676,4824,266,329,1.04
+2019,Chaiyaphum,ChaiNat1,0,0,0,0,0,0
+2019,Chaiyaphum,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Chaiyaphum,PTT1,1760,1666,714,406,429,0.1
+2019,Chaiyaphum,SuphanBuri1,0,0,0,0,0,0
+2019,Nakhon Ratchasima,NativeRice,89274,56482,20046,225,355,2.5
+2019,Nakhon Ratchasima,RD6,159365,125573,35696,224,284,4.48
+2019,Nakhon Ratchasima,RD15,43271,27239,10915,252,401,1.22
+2019,Nakhon Ratchasima,KDML105,2982287,1644783,591047,198,359,83.8
+2019,Nakhon Ratchasima,SuphanBuri60,14030,10561,5129,366,486,0.39
+2019,Nakhon Ratchasima,PhotoperiodSensitiveRice,82005,49395,20337,248,412,2.3
+2019,Nakhon Ratchasima,NonPhotoperiodSensitiveRice ,97328,77150,32763,337,425,2.73
+2019,Nakhon Ratchasima,ChaiNat1,61390,43484,21849,356,502,1.73
+2019,Nakhon Ratchasima,SupanburiAromaticRice,543,414,151,278,365,0.02
+2019,Nakhon Ratchasima,PTT1,21544,14997,7302,339,487,0.61
+2019,Nakhon Ratchasima,SuphanBuri1,7772,7042,2949,379,419,0.22
+2019,Saraburi,NativeRice,2031,2009,858,422,427,0.62
+2019,Saraburi,RD6,0,0,0,0,0,0
+2019,Saraburi,RD15,0,0,0,0,0,0
+2019,Saraburi,KDML105,7252,6872,2967,409,432,2.22
+2019,Saraburi,SuphanBuri60,623,623,347,557,557,0.19
+2019,Saraburi,PhotoperiodSensitiveRice,5217,5217,2326,446,446,1.6
+2019,Saraburi,NonPhotoperiodSensitiveRice ,214637,212291,127532,594,601,65.84
+2019,Saraburi,ChaiNat1,2171,2129,1027,473,482,0.67
+2019,Saraburi,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Saraburi,PTT1,43051,41499,24802,576,598,13.21
+2019,Saraburi,SuphanBuri1,51002,50657,34263,672,676,15.65
+2019,Lop Buri,NativeRice,4203,4121,1613,384,391,0.56
+2019,Lop Buri,RD6,0,0,0,0,0,0
+2019,Lop Buri,RD15,0,0,0,0,0,0
+2019,Lop Buri,KDML105,238497,228952,78927,331,345,31.52
+2019,Lop Buri,SuphanBuri60,0,0,0,0,0,0
+2019,Lop Buri,PhotoperiodSensitiveRice,3119,3082,1222,392,396,0.41
+2019,Lop Buri,NonPhotoperiodSensitiveRice ,299201,289616,166969,558,577,39.55
+2019,Lop Buri,ChaiNat1,9467,9117,3516,371,386,1.25
+2019,Lop Buri,SupanburiAromaticRice,374,374,148,396,396,0.05
+2019,Lop Buri,PTT1,191580,190089,119995,626,631,25.32
+2019,Lop Buri,SuphanBuri1,10126,9630,5388,532,560,1.34
+2019,Sing Buri,NativeRice,1701,1701,961,565,565,0.57
+2019,Sing Buri,RD6,345,342,169,490,494,0.11
+2019,Sing Buri,RD15,0,0,0,0,0,0
+2019,Sing Buri,KDML105,6094,6094,2587,425,425,2
+2019,Sing Buri,SuphanBuri60,0,0,0,0,0,0
+2019,Sing Buri,PhotoperiodSensitiveRice,533,533,283,531,531,0.18
+2019,Sing Buri,NonPhotoperiodSensitiveRice ,168215,167733,116097,690,692,55.34
+2019,Sing Buri,ChaiNat1,0,0,0,0,0,0
+2019,Sing Buri,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Sing Buri,PTT1,120077,119404,91272,760,764,39.5
+2019,Sing Buri,SuphanBuri1,6990,6961,5387,771,774,2.3
+2019,Chai Nat,NativeRice,1788,1740,669,374,384,0.21
+2019,Chai Nat,RD6,0,0,0,0,0,0
+2019,Chai Nat,RD15,0,0,0,0,0,0
+2019,Chai Nat,KDML105,21296,19614,8101,380,413,2.51
+2019,Chai Nat,SuphanBuri60,917,917,378,412,412,0.11
+2019,Chai Nat,PhotoperiodSensitiveRice,96,96,39,406,406,0.01
+2019,Chai Nat,NonPhotoperiodSensitiveRice ,606520,558417,364895,602,653,71.52
+2019,Chai Nat,ChaiNat1,2700,2613,990,367,379,0.32
+2019,Chai Nat,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Chai Nat,PTT1,206124,189187,133408,647,705,24.31
+2019,Chai Nat,SuphanBuri1,8583,8336,5346,623,641,1.01
+2019,Suphan Buri,NativeRice,2672,2644,1204,451,455,0.22
+2019,Suphan Buri,RD6,0,0,0,0,0,0
+2019,Suphan Buri,RD15,0,0,0,0,0,0
+2019,Suphan Buri,KDML105,72618,63432,29615,408,467,6.01
+2019,Suphan Buri,SuphanBuri60,0,0,0,0,0,0
+2019,Suphan Buri,PhotoperiodSensitiveRice,0,0,0,0,0,0
+2019,Suphan Buri,NonPhotoperiodSensitiveRice ,884944,785138,583108,659,743,73.19
+2019,Suphan Buri,ChaiNat1,0,0,0,0,0,0
+2019,Suphan Buri,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Suphan Buri,PTT1,238406,217294,169809,712,781,19.72
+2019,Suphan Buri,SuphanBuri1,10422,10269,7001,672,682,0.86
+2019,Ang Thong,NativeRice,7021,6946,3862,550,556,2.09
+2019,Ang Thong,RD6,0,0,0,0,0,0
+2019,Ang Thong,RD15,0,0,0,0,0,0
+2019,Ang Thong,KDML105,6633,6376,2780,419,436,1.96
+2019,Ang Thong,SuphanBuri60,546,546,324,593,593,0.16
+2019,Ang Thong,PhotoperiodSensitiveRice,4001,3973,2295,574,578,1.18
+2019,Ang Thong,NonPhotoperiodSensitiveRice ,176601,171024,114974,651,672,52.28
+2019,Ang Thong,ChaiNat1,975,975,552,566,566,0.29
+2019,Ang Thong,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Ang Thong,PTT1,139722,136574,97894,701,717,41.36
+2019,Ang Thong,SuphanBuri1,2283,2263,1482,649,655,0.68
+2019,Ayutthaya,NativeRice,28876,27654,13846,479,501,3.56
+2019,Ayutthaya,RD6,0,0,0,0,0,0
+2019,Ayutthaya,RD15,0,0,0,0,0,0
+2019,Ayutthaya,KDML105,1780,1780,775,435,435,0.22
+2019,Ayutthaya,SuphanBuri60,2562,2562,1149,448,448,0.32
+2019,Ayutthaya,PhotoperiodSensitiveRice,7737,7713,4820,623,625,0.95
+2019,Ayutthaya,NonPhotoperiodSensitiveRice ,685094,682563,458145,669,671,84.5
+2019,Ayutthaya,ChaiNat1,3090,3090,1916,620,620,0.38
+2019,Ayutthaya,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Ayutthaya,PTT1,41494,41433,29149,702,704,5.12
+2019,Ayutthaya,SuphanBuri1,40114,39990,26981,673,675,4.95
+2019,Nonthaburi,NativeRice,0,0,0,0,0,0
+2019,Nonthaburi,RD6,0,0,0,0,0,0
+2019,Nonthaburi,RD15,0,0,0,0,0,0
+2019,Nonthaburi,KDML105,0,0,0,0,0,0
+2019,Nonthaburi,SuphanBuri60,0,0,0,0,0,0
+2019,Nonthaburi,PhotoperiodSensitiveRice,0,0,0,0,0,0
+2019,Nonthaburi,NonPhotoperiodSensitiveRice ,84011,83801,57822,688,690,98.04
+2019,Nonthaburi,ChaiNat1,0,0,0,0,0,0
+2019,Nonthaburi,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Nonthaburi,PTT1,1221,1221,879,720,720,1.42
+2019,Nonthaburi,SuphanBuri1,461,461,309,670,670,0.54
+2019,Bangkok Metropolis,NativeRice,0,0,0,0,0,0
+2019,Bangkok Metropolis,RD6,0,0,0,0,0,0
+2019,Bangkok Metropolis,RD15,0,0,0,0,0,0
+2019,Bangkok Metropolis,KDML105,0,0,0,0,0,0
+2019,Bangkok Metropolis,SuphanBuri60,0,0,0,0,0,0
+2019,Bangkok Metropolis,PhotoperiodSensitiveRice,247,247,154,623,623,0.3
+2019,Bangkok Metropolis,NonPhotoperiodSensitiveRice ,48785,48785,33627,689,689,58.98
+2019,Bangkok Metropolis,ChaiNat1,0,0,0,0,0,0
+2019,Bangkok Metropolis,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Bangkok Metropolis,PTT1,32995,32995,22801,691,691,39.89
+2019,Bangkok Metropolis,SuphanBuri1,686,686,471,687,687,0.83
+2019,Pathum Thani,NativeRice,0,0,0,0,0,0
+2019,Pathum Thani,RD6,0,0,0,0,0,0
+2019,Pathum Thani,RD15,0,0,0,0,0,0
+2019,Pathum Thani,KDML105,0,0,0,0,0,0
+2019,Pathum Thani,SuphanBuri60,0,0,0,0,0,0
+2019,Pathum Thani,PhotoperiodSensitiveRice,1915,1915,1102,575,575,0.62
+2019,Pathum Thani,NonPhotoperiodSensitiveRice ,261657,260778,188170,719,722,84.49
+2019,Pathum Thani,ChaiNat1,0,0,0,0,0,0
+2019,Pathum Thani,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Pathum Thani,PTT1,43193,43111,29756,689,690,13.95
+2019,Pathum Thani,SuphanBuri1,2913,2913,2031,697,697,0.94
+2019,Nakhon Nayok,NativeRice,43801,43673,16535,378,379,12.06
+2019,Nakhon Nayok,RD6,0,0,0,0,0,0
+2019,Nakhon Nayok,RD15,0,0,0,0,0,0
+2019,Nakhon Nayok,KDML105,33111,32924,12355,373,375,9.11
+2019,Nakhon Nayok,SuphanBuri60,1722,1722,848,492,492,0.47
+2019,Nakhon Nayok,PhotoperiodSensitiveRice,79514,78949,43897,552,556,21.88
+2019,Nakhon Nayok,NonPhotoperiodSensitiveRice ,189770,187105,119199,628,637,52.21
+2019,Nakhon Nayok,ChaiNat1,1523,1503,703,462,468,0.42
+2019,Nakhon Nayok,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Nakhon Nayok,PTT1,11458,11418,6488,566,568,3.15
+2019,Nakhon Nayok,SuphanBuri1,2556,2531,1330,520,525,0.7
+2019,Prachin Buri,NativeRice,27399,27225,7806,285,287,7.02
+2019,Prachin Buri,RD6,779,765,301,386,393,0.2
+2019,Prachin Buri,RD15,0,0,0,0,0,0
+2019,Prachin Buri,KDML105,79347,77984,25131,317,322,20.3
+2019,Prachin Buri,SuphanBuri60,2740,2701,1271,464,471,0.7
+2019,Prachin Buri,PhotoperiodSensitiveRice,116346,113683,42077,362,370,29.77
+2019,Prachin Buri,NonPhotoperiodSensitiveRice ,158017,155841,77713,492,499,40.43
+2019,Prachin Buri,ChaiNat1,1440,1440,577,401,401,0.37
+2019,Prachin Buri,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Prachin Buri,PTT1,3654,3611,1875,513,519,0.94
+2019,Prachin Buri,SuphanBuri1,1072,1057,517,482,489,0.27
+2019,Chachoengsao,NativeRice,1364,1340,466,342,348,0.23
+2019,Chachoengsao,RD6,2093,2045,955,456,467,0.34
+2019,Chachoengsao,RD15,0,0,0,0,0,0
+2019,Chachoengsao,KDML105,91711,89808,39374,429,438,15.05
+2019,Chachoengsao,SuphanBuri60,11041,10880,8202,743,754,1.81
+2019,Chachoengsao,PhotoperiodSensitiveRice,83550,82386,54063,647,656,13.71
+2019,Chachoengsao,NonPhotoperiodSensitiveRice ,348766,344389,228180,654,663,57.22
+2019,Chachoengsao,ChaiNat1,0,0,0,0,0,0
+2019,Chachoengsao,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Chachoengsao,PTT1,59066,58693,37734,639,643,9.69
+2019,Chachoengsao,SuphanBuri1,11905,11717,7991,671,682,1.95
+2019,Sa Kaeo,NativeRice,8845,6655,2231,252,335,1.2
+2019,Sa Kaeo,RD6,8754,7626,2286,261,300,1.18
+2019,Sa Kaeo,RD15,0,0,0,0,0,0
+2019,Sa Kaeo,KDML105,675498,529798,166369,246,314,91.44
+2019,Sa Kaeo,SuphanBuri60,0,0,0,0,0,0
+2019,Sa Kaeo,PhotoperiodSensitiveRice,29893,24209,7085,237,293,4.05
+2019,Sa Kaeo,NonPhotoperiodSensitiveRice ,14587,13099,3605,247,275,1.97
+2019,Sa Kaeo,ChaiNat1,0,0,0,0,0,0
+2019,Sa Kaeo,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Sa Kaeo,PTT1,1166,1059,428,367,404,0.16
+2019,Sa Kaeo,SuphanBuri1,0,0,0,0,0,0
+2019,Chanthaburi,NativeRice,1434,1401,542,378,387,10.67
+2019,Chanthaburi,RD6,0,0,0,0,0,0
+2019,Chanthaburi,RD15,0,0,0,0,0,0
+2019,Chanthaburi,KDML105,10724,10139,3646,340,360,79.74
+2019,Chanthaburi,SuphanBuri60,0,0,0,0,0,0
+2019,Chanthaburi,PhotoperiodSensitiveRice,129,129,42,326,326,0.96
+2019,Chanthaburi,NonPhotoperiodSensitiveRice ,697,697,272,390,390,5.18
+2019,Chanthaburi,ChaiNat1,106,106,35,330,330,0.79
+2019,Chanthaburi,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Chanthaburi,PTT1,358,358,177,494,494,2.66
+2019,Chanthaburi,SuphanBuri1,0,0,0,0,0,0
+2019,Trat,NativeRice,425,425,148,348,348,2.92
+2019,Trat,RD6,0,0,0,0,0,0
+2019,Trat,RD15,0,0,0,0,0,0
+2019,Trat,KDML105,12120,11877,5235,432,441,83.29
+2019,Trat,SuphanBuri60,0,0,0,0,0,0
+2019,Trat,PhotoperiodSensitiveRice,313,313,162,518,518,2.15
+2019,Trat,NonPhotoperiodSensitiveRice ,872,872,386,443,443,5.99
+2019,Trat,ChaiNat1,0,0,0,0,0,0
+2019,Trat,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Trat,PTT1,822,800,402,489,503,5.65
+2019,Trat,SuphanBuri1,0,0,0,0,0,0
+2019,Rayong,NativeRice,316,316,111,351,351,3.2
+2019,Rayong,RD6,0,0,0,0,0,0
+2019,Rayong,RD15,0,0,0,0,0,0
+2019,Rayong,KDML105,2489,2478,1019,409,411,25.17
+2019,Rayong,SuphanBuri60,344,344,142,413,413,3.48
+2019,Rayong,PhotoperiodSensitiveRice,491,491,177,360,360,4.96
+2019,Rayong,NonPhotoperiodSensitiveRice ,4660,4615,2508,538,543,47.12
+2019,Rayong,ChaiNat1,43,34,16,372,471,0.43
+2019,Rayong,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Rayong,PTT1,811,811,429,529,529,8.2
+2019,Rayong,SuphanBuri1,736,727,417,567,574,7.44
+2019,Chon Buri,NativeRice,517,499,171,331,343,0.77
+2019,Chon Buri,RD6,0,0,0,0,0,0
+2019,Chon Buri,RD15,0,0,0,0,0,0
+2019,Chon Buri,KDML105,17299,16931,7048,407,416,25.75
+2019,Chon Buri,SuphanBuri60,669,654,267,399,408,1
+2019,Chon Buri,PhotoperiodSensitiveRice,4007,3942,1640,409,416,5.96
+2019,Chon Buri,NonPhotoperiodSensitiveRice ,31152,30473,14108,453,463,46.37
+2019,Chon Buri,ChaiNat1,356,356,152,427,427,0.53
+2019,Chon Buri,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Chon Buri,PTT1,12999,12418,6701,516,540,19.35
+2019,Chon Buri,SuphanBuri1,180,180,77,428,428,0.27
+2019,Samut Prakan,NativeRice,0,0,0,0,0,0
+2019,Samut Prakan,RD6,0,0,0,0,0,0
+2019,Samut Prakan,RD15,0,0,0,0,0,0
+2019,Samut Prakan,KDML105,0,0,0,0,0,0
+2019,Samut Prakan,SuphanBuri60,347,347,186,536,536,1.9
+2019,Samut Prakan,PhotoperiodSensitiveRice,105,105,67,638,638,0.57
+2019,Samut Prakan,NonPhotoperiodSensitiveRice ,13382,13336,9992,747,749,73.08
+2019,Samut Prakan,ChaiNat1,0,0,0,0,0,0
+2019,Samut Prakan,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Samut Prakan,PTT1,4478,4478,3137,701,701,24.45
+2019,Samut Prakan,SuphanBuri1,0,0,0,0,0,0
+2019,Samut Sakhon,NativeRice,0,0,0,0,0,0
+2019,Samut Sakhon,RD6,0,0,0,0,0,0
+2019,Samut Sakhon,RD15,0,0,0,0,0,0
+2019,Samut Sakhon,KDML105,0,0,0,0,0,0
+2019,Samut Sakhon,SuphanBuri60,0,0,0,0,0,0
+2019,Samut Sakhon,PhotoperiodSensitiveRice,489,488,350,716,717,9.72
+2019,Samut Sakhon,NonPhotoperiodSensitiveRice ,4374,4347,3031,693,697,86.94
+2019,Samut Sakhon,ChaiNat1,0,0,0,0,0,0
+2019,Samut Sakhon,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Samut Sakhon,PTT1,85,85,53,624,624,1.69
+2019,Samut Sakhon,SuphanBuri1,83,83,36,434,434,1.65
+2019,Nakhon Pathom,NativeRice,365,365,177,485,485,0.13
+2019,Nakhon Pathom,RD6,0,0,0,0,0,0
+2019,Nakhon Pathom,RD15,0,0,0,0,0,0
+2019,Nakhon Pathom,KDML105,28,28,16,571,571,0.01
+2019,Nakhon Pathom,SuphanBuri60,433,433,293,677,677,0.16
+2019,Nakhon Pathom,PhotoperiodSensitiveRice,13095,13073,9374,716,717,4.85
+2019,Nakhon Pathom,NonPhotoperiodSensitiveRice ,226979,225664,169985,749,753,84.01
+2019,Nakhon Pathom,ChaiNat1,1093,1093,782,715,715,0.4
+2019,Nakhon Pathom,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Nakhon Pathom,PTT1,23152,23050,17719,765,769,8.57
+2019,Nakhon Pathom,SuphanBuri1,5052,5012,3651,723,728,1.87
+2019,Kanchanaburi,NativeRice,10866,9183,2853,263,311,2.89
+2019,Kanchanaburi,RD6,0,0,0,0,0,0
+2019,Kanchanaburi,RD15,0,0,0,0,0,0
+2019,Kanchanaburi,KDML105,125507,87646,32649,260,373,33.46
+2019,Kanchanaburi,SuphanBuri60,303,264,134,442,508,0.08
+2019,Kanchanaburi,PhotoperiodSensitiveRice,4335,3874,1401,323,362,1.16
+2019,Kanchanaburi,NonPhotoperiodSensitiveRice ,37527,28816,20314,541,705,10.01
+2019,Kanchanaburi,ChaiNat1,3395,2939,1667,491,567,0.91
+2019,Kanchanaburi,SupanburiAromaticRice,1251,1161,634,507,546,0.33
+2019,Kanchanaburi,PTT1,110341,95150,76940,697,809,29.42
+2019,Kanchanaburi,SuphanBuri1,81542,67778,54148,664,799,21.74
+2019,Ratchaburi,NativeRice,1225,1208,427,349,353,0.51
+2019,Ratchaburi,RD6,0,0,0,0,0,0
+2019,Ratchaburi,RD15,0,0,0,0,0,0
+2019,Ratchaburi,KDML105,6229,6188,2088,335,337,2.62
+2019,Ratchaburi,SuphanBuri60,248,248,119,480,480,0.1
+2019,Ratchaburi,PhotoperiodSensitiveRice,1928,1928,710,368,368,0.81
+2019,Ratchaburi,NonPhotoperiodSensitiveRice ,36747,36368,24436,665,672,15.45
+2019,Ratchaburi,ChaiNat1,7293,7262,4714,646,649,3.07
+2019,Ratchaburi,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Ratchaburi,PTT1,48035,47214,33288,693,705,20.19
+2019,Ratchaburi,SuphanBuri1,136206,135308,94052,691,695,57.25
+2019,Samut Songkhram,NativeRice,0,0,0,0,0,0
+2019,Samut Songkhram,RD6,0,0,0,0,0,0
+2019,Samut Songkhram,RD15,0,0,0,0,0,0
+2019,Samut Songkhram,KDML105,0,0,0,0,0,0
+2019,Samut Songkhram,SuphanBuri60,0,0,0,0,0,0
+2019,Samut Songkhram,PhotoperiodSensitiveRice,0,0,0,0,0,0
+2019,Samut Songkhram,NonPhotoperiodSensitiveRice ,1700,1685,1169,688,694,73.66
+2019,Samut Songkhram,ChaiNat1,49,49,33,673,673,2.12
+2019,Samut Songkhram,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Samut Songkhram,PTT1,44,44,29,659,659,1.91
+2019,Samut Songkhram,SuphanBuri1,515,512,365,709,713,22.31
+2019,Phetchaburi,NativeRice,1029,1029,442,430,430,0.36
+2019,Phetchaburi,RD6,0,0,0,0,0,0
+2019,Phetchaburi,RD15,0,0,0,0,0,0
+2019,Phetchaburi,KDML105,665,665,303,456,456,0.24
+2019,Phetchaburi,SuphanBuri60,1146,1146,613,535,535,0.41
+2019,Phetchaburi,PhotoperiodSensitiveRice,6732,6719,3072,456,457,2.38
+2019,Phetchaburi,NonPhotoperiodSensitiveRice ,160789,159686,110998,690,695,56.84
+2019,Phetchaburi,ChaiNat1,35011,34887,24856,710,712,12.38
+2019,Phetchaburi,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Phetchaburi,PTT1,18003,17840,14008,778,785,6.36
+2019,Phetchaburi,SuphanBuri1,59502,59217,43730,735,738,21.03
+2019,Prachuap Khiri Khan,NativeRice,218,218,80,367,367,1.05
+2019,Prachuap Khiri Khan,RD6,0,0,0,0,0,0
+2019,Prachuap Khiri Khan,RD15,0,0,0,0,0,0
+2019,Prachuap Khiri Khan,KDML105,1584,1566,632,399,404,7.71
+2019,Prachuap Khiri Khan,SuphanBuri60,0,0,0,0,0,0
+2019,Prachuap Khiri Khan,PhotoperiodSensitiveRice,56,56,20,357,357,0.27
+2019,Prachuap Khiri Khan,NonPhotoperiodSensitiveRice ,1555,1539,817,525,531,7.57
+2019,Prachuap Khiri Khan,ChaiNat1,6418,6332,3639,567,575,31.23
+2019,Prachuap Khiri Khan,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Prachuap Khiri Khan,PTT1,10314,10227,6133,595,600,50.18
+2019,Prachuap Khiri Khan,SuphanBuri1,409,409,229,560,560,1.99
+2019,Chumphon,NativeRice,406,406,159,392,392,11.81
+2019,Chumphon,RD6,0,0,0,0,0,0
+2019,Chumphon,RD15,0,0,0,0,0,0
+2019,Chumphon,KDML105,0,0,0,0,0,0
+2019,Chumphon,SuphanBuri60,0,0,0,0,0,0
+2019,Chumphon,PhotoperiodSensitiveRice,245,245,99,404,404,7.12
+2019,Chumphon,NonPhotoperiodSensitiveRice ,395,395,151,382,382,11.49
+2019,Chumphon,ChaiNat1,0,0,0,0,0,0
+2019,Chumphon,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Chumphon,PTT1,2393,2384,975,407,409,69.58
+2019,Chumphon,SuphanBuri1,0,0,0,0,0,0
+2019,Ranong,NativeRice,69,69,25,362,362,10.01
+2019,Ranong,RD6,0,0,0,0,0,0
+2019,Ranong,RD15,0,0,0,0,0,0
+2019,Ranong,KDML105,0,0,0,0,0,0
+2019,Ranong,SuphanBuri60,0,0,0,0,0,0
+2019,Ranong,PhotoperiodSensitiveRice,38,38,15,395,395,5.52
+2019,Ranong,NonPhotoperiodSensitiveRice ,78,78,31,397,397,11.32
+2019,Ranong,ChaiNat1,0,0,0,0,0,0
+2019,Ranong,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Ranong,PTT1,504,504,175,347,347,73.15
+2019,Ranong,SuphanBuri1,0,0,0,0,0,0
+2019,Surat Thani,NativeRice,517,517,151,292,292,3.26
+2019,Surat Thani,RD6,0,0,0,0,0,0
+2019,Surat Thani,RD15,0,0,0,0,0,0
+2019,Surat Thani,KDML105,716,716,190,265,265,4.51
+2019,Surat Thani,SuphanBuri60,0,0,0,0,0,0
+2019,Surat Thani,PhotoperiodSensitiveRice,624,624,185,296,296,3.93
+2019,Surat Thani,NonPhotoperiodSensitiveRice ,6516,6516,1960,301,301,41.05
+2019,Surat Thani,ChaiNat1,0,0,0,0,0,0
+2019,Surat Thani,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Surat Thani,PTT1,7500,7479,2604,347,348,47.25
+2019,Surat Thani,SuphanBuri1,0,0,0,0,0,0
+2019,Phangnga,NativeRice,712,712,221,310,310,26.3
+2019,Phangnga,RD6,0,0,0,0,0,0
+2019,Phangnga,RD15,0,0,0,0,0,0
+2019,Phangnga,KDML105,245,245,82,335,335,9.05
+2019,Phangnga,SuphanBuri60,0,0,0,0,0,0
+2019,Phangnga,PhotoperiodSensitiveRice,191,191,63,330,330,7.05
+2019,Phangnga,NonPhotoperiodSensitiveRice ,822,822,284,345,345,30.35
+2019,Phangnga,ChaiNat1,0,0,0,0,0,0
+2019,Phangnga,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Phangnga,PTT1,738,738,256,347,347,27.25
+2019,Phangnga,SuphanBuri1,0,0,0,0,0,0
+2019,Phuket,NativeRice,0,0,0,0,0,0
+2019,Phuket,RD6,0,0,0,0,0,0
+2019,Phuket,RD15,0,0,0,0,0,0
+2019,Phuket,KDML105,0,0,0,0,0,0
+2019,Phuket,SuphanBuri60,0,0,0,0,0,0
+2019,Phuket,PhotoperiodSensitiveRice,0,0,0,0,0,0
+2019,Phuket,NonPhotoperiodSensitiveRice ,69,69,33,478,478,100
+2019,Phuket,ChaiNat1,0,0,0,0,0,0
+2019,Phuket,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Phuket,PTT1,0,0,0,0,0,0
+2019,Phuket,SuphanBuri1,0,0,0,0,0,0
+2019,Krabi,NativeRice,3320,3317,1141,344,344,41.77
+2019,Krabi,RD6,0,0,0,0,0,0
+2019,Krabi,RD15,0,0,0,0,0,0
+2019,Krabi,KDML105,2206,2203,641,291,291,27.75
+2019,Krabi,SuphanBuri60,0,0,0,0,0,0
+2019,Krabi,PhotoperiodSensitiveRice,2295,2286,697,304,305,28.87
+2019,Krabi,NonPhotoperiodSensitiveRice ,128,128,38,297,297,1.61
+2019,Krabi,ChaiNat1,0,0,0,0,0,0
+2019,Krabi,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Krabi,PTT1,0,0,0,0,0,0
+2019,Krabi,SuphanBuri1,0,0,0,0,0,0
+2019,Trang,NativeRice,5836,5836,2182,374,374,52.51
+2019,Trang,RD6,0,0,0,0,0,0
+2019,Trang,RD15,0,0,0,0,0,0
+2019,Trang,KDML105,0,0,0,0,0,0
+2019,Trang,SuphanBuri60,0,0,0,0,0,0
+2019,Trang,PhotoperiodSensitiveRice,0,0,0,0,0,0
+2019,Trang,NonPhotoperiodSensitiveRice ,5085,5085,1984,390,390,45.76
+2019,Trang,ChaiNat1,0,0,0,0,0,0
+2019,Trang,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Trang,PTT1,192,192,87,453,453,1.73
+2019,Trang,SuphanBuri1,0,0,0,0,0,0
+2019,Nakhon Si Thammarat,NativeRice,25521,25384,8396,329,331,9.93
+2019,Nakhon Si Thammarat,RD6,0,0,0,0,0,0
+2019,Nakhon Si Thammarat,RD15,0,0,0,0,0,0
+2019,Nakhon Si Thammarat,KDML105,3038,3001,1009,332,336,1.18
+2019,Nakhon Si Thammarat,SuphanBuri60,151,151,50,331,331,0.06
+2019,Nakhon Si Thammarat,PhotoperiodSensitiveRice,20811,20779,8014,385,386,8.1
+2019,Nakhon Si Thammarat,NonPhotoperiodSensitiveRice ,158360,157262,80918,511,515,61.63
+2019,Nakhon Si Thammarat,ChaiNat1,4180,4168,2123,508,509,1.63
+2019,Nakhon Si Thammarat,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Nakhon Si Thammarat,PTT1,44879,44662,23669,527,530,17.47
+2019,Nakhon Si Thammarat,SuphanBuri1,0,0,0,0,0,0
+2019,Phatthalung,NativeRice,62488,62482,27158,435,435,42.22
+2019,Phatthalung,RD6,0,0,0,0,0,0
+2019,Phatthalung,RD15,0,0,0,0,0,0
+2019,Phatthalung,KDML105,749,749,221,295,295,0.51
+2019,Phatthalung,SuphanBuri60,685,684,216,315,316,0.46
+2019,Phatthalung,PhotoperiodSensitiveRice,18794,18793,6100,325,325,12.7
+2019,Phatthalung,NonPhotoperiodSensitiveRice ,45548,45545,21610,474,474,30.77
+2019,Phatthalung,ChaiNat1,8292,8291,4590,554,554,5.6
+2019,Phatthalung,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Phatthalung,PTT1,11457,11456,6755,590,590,7.74
+2019,Phatthalung,SuphanBuri1,0,0,0,0,0,0
+2019,Songkhla,NativeRice,29310,21961,8736,298,398,16.77
+2019,Songkhla,RD6,0,0,0,0,0,0
+2019,Songkhla,RD15,60,60,14,233,233,0.03
+2019,Songkhla,KDML105,1323,1048,352,266,336,0.76
+2019,Songkhla,SuphanBuri60,80,80,18,225,225,0.05
+2019,Songkhla,PhotoperiodSensitiveRice,13129,10992,3929,299,357,7.52
+2019,Songkhla,NonPhotoperiodSensitiveRice ,95796,73662,31855,333,432,54.84
+2019,Songkhla,ChaiNat1,3952,3642,1323,335,363,2.26
+2019,Songkhla,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Songkhla,PTT1,31034,22829,11588,373,508,17.77
+2019,Songkhla,SuphanBuri1,0,0,0,0,0,0
+2019,Satun,NativeRice,14802,14802,6342,428,428,81.42
+2019,Satun,RD6,0,0,0,0,0,0
+2019,Satun,RD15,0,0,0,0,0,0
+2019,Satun,KDML105,87,87,32,368,368,0.48
+2019,Satun,SuphanBuri60,35,35,12,343,343,0.19
+2019,Satun,PhotoperiodSensitiveRice,0,0,0,0,0,0
+2019,Satun,NonPhotoperiodSensitiveRice ,2009,2009,738,367,367,11.05
+2019,Satun,ChaiNat1,0,0,0,0,0,0
+2019,Satun,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Satun,PTT1,1247,1247,617,495,495,6.86
+2019,Satun,SuphanBuri1,0,0,0,0,0,0
+2019,Pattani,NativeRice,52154,52115,23334,447,448,70.22
+2019,Pattani,RD6,0,0,0,0,0,0
+2019,Pattani,RD15,0,0,0,0,0,0
+2019,Pattani,KDML105,0,0,0,0,0,0
+2019,Pattani,SuphanBuri60,0,0,0,0,0,0
+2019,Pattani,PhotoperiodSensitiveRice,11225,11220,4766,425,425,15.12
+2019,Pattani,NonPhotoperiodSensitiveRice ,10884,10878,4713,433,433,14.66
+2019,Pattani,ChaiNat1,0,0,0,0,0,0
+2019,Pattani,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Pattani,PTT1,0,0,0,0,0,0
+2019,Pattani,SuphanBuri1,0,0,0,0,0,0
+2019,Yala,NativeRice,19177,19035,6268,327,329,82.67
+2019,Yala,RD6,0,0,0,0,0,0
+2019,Yala,RD15,0,0,0,0,0,0
+2019,Yala,KDML105,0,0,0,0,0,0
+2019,Yala,SuphanBuri60,0,0,0,0,0,0
+2019,Yala,PhotoperiodSensitiveRice,1669,1653,590,354,357,7.2
+2019,Yala,NonPhotoperiodSensitiveRice ,2349,2329,868,370,373,10.13
+2019,Yala,ChaiNat1,0,0,0,0,0,0
+2019,Yala,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Yala,PTT1,0,0,0,0,0,0
+2019,Yala,SuphanBuri1,0,0,0,0,0,0
+2019,Narathiwat,NativeRice,22581,22514,9778,433,434,64.76
+2019,Narathiwat,RD6,0,0,0,0,0,0
+2019,Narathiwat,RD15,0,0,0,0,0,0
+2019,Narathiwat,KDML105,0,0,0,0,0,0
+2019,Narathiwat,SuphanBuri60,0,0,0,0,0,0
+2019,Narathiwat,PhotoperiodSensitiveRice,3039,3032,1348,444,445,8.71
+2019,Narathiwat,NonPhotoperiodSensitiveRice ,9253,9241,4116,445,445,26.53
+2019,Narathiwat,ChaiNat1,0,0,0,0,0,0
+2019,Narathiwat,SupanburiAromaticRice,0,0,0,0,0,0
+2019,Narathiwat,PTT1,0,0,0,0,0,0
+2019,Narathiwat,SuphanBuri1,0,0,0,0,0,0

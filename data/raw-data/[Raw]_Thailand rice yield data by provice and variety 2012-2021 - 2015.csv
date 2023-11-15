@@ -1,0 +1,475 @@
+year,province(ENG),variety ENG,Planting area (rai),Harvested area (rai),Production (ton),Yield by Planting area (kg/rai),Yield by Harvested area (kg/rai),Portion of planting in province (percent)
+2015,Chiang Rai,NativeRice,"48,817","47,551","22,012",451,463,4.12
+2015,Chiang Rai,RD6,"742,588","725,953","410,432",553,565,62.68
+2015,Chiang Rai,RD15,"136,098","132,848","71,562",526,539,11.49
+2015,Chiang Rai,KDML105,"157,052","152,401","82,604",526,542,13.26
+2015,Chiang Rai,SuphanBuri60,"9,023","8,808","6,306",699,716,0.76
+2015,Chiang Rai,PhotoperiodSensitiveRice,"38,527","37,507","28,410",737,757,3.25
+2015,Chiang Rai,NonPhotoperiodSensitiveRice,"40,619","39,649","25,507",628,643,3.43
+2015,Chiang Rai,ChaiNat1,"1,534","1,497","1,056",688,705,0.13
+2015,Chiang Rai,PTT1,"6,204","6,056","4,139",667,683,0.52
+2015,Chiang Rai,SuphanBuri1,"4,274","4,172","1,560",365,374,0.36
+2015,Phayao,NativeRice,"15,520","14,811","7,131",459,481,2.54
+2015,Phayao,RD6,"175,362","166,625","77,440",442,465,28.71
+2015,Phayao,RD15,"126,759","120,805","61,805",488,512,20.76
+2015,Phayao,KDML105,"242,329","231,489","101,887",420,440,39.68
+2015,Phayao,PhotoperiodSensitiveRice,"16,436","15,664","8,443",514,539,2.69
+2015,Phayao,NonPhotoperiodSensitiveRice,"33,118","31,500","21,521",650,683,5.42
+2015,Phayao,PTT1,"1,204","1,147",607,504,529,0.2
+2015,Lampang,NativeRice,"6,857","6,591","2,515",367,382,1.75
+2015,Lampang,RD6,"293,912","283,802","144,480",492,509,73.95
+2015,Lampang,RD15,"4,297","4,146","2,483",578,599,1.08
+2015,Lampang,KDML105,"30,383","29,296","15,098",497,515,7.64
+2015,Lampang,PhotoperiodSensitiveRice,"19,683","18,992","10,296",523,542,4.95
+2015,Lampang,NonPhotoperiodSensitiveRice,"42,294","40,644","21,288",503,524,10.63
+2015,Lamphun,NativeRice,"10,181","10,079","4,882",480,484,9.77
+2015,Lamphun,RD6,"60,246","59,648","36,164",600,606,57.8
+2015,Lamphun,KDML105,"11,323","11,211","6,562",580,585,10.86
+2015,Lamphun,PhotoperiodSensitiveRice,"5,066","5,016","3,194",630,637,4.86
+2015,Lamphun,NonPhotoperiodSensitiveRice,"16,818","16,651","10,809",643,649,16.14
+2015,Lamphun,PTT1,593,587,360,607,613,0.57
+2015,Chiang Mai,NativeRice,"89,889","88,863","42,859",477,482,20.9
+2015,Chiang Mai,RD6,"191,052","188,836","118,274",619,626,44.44
+2015,Chiang Mai,RD15,"2,563","2,533","1,501",586,593,0.6
+2015,Chiang Mai,KDML105,"42,304","41,752","24,920",589,597,9.84
+2015,Chiang Mai,PhotoperiodSensitiveRice,"9,504","9,389","6,144",646,654,2.21
+2015,Chiang Mai,NonPhotoperiodSensitiveRice,"90,363","89,254","66,045",731,740,21.02
+2015,Chiang Mai,PTT1,"4,236","4,186","3,216",759,768,0.99
+2015,Mae Hong Son,NativeRice,"49,970","48,447","17,407",348,359,32.75
+2015,Mae Hong Son,RD6,"5,886","5,687","2,708",460,476,3.86
+2015,Mae Hong Son,KDML105,"33,968","32,953","12,956",381,393,22.26
+2015,Mae Hong Son,PhotoperiodSensitiveRice,"11,808","11,448","4,444",376,388,7.74
+2015,Mae Hong Son,NonPhotoperiodSensitiveRice,"50,940","49,388","23,069",453,467,33.39
+2015,Tak,NativeRice,"75,786","74,261","26,974",356,363,35.52
+2015,Tak,RD6,"20,062","19,685","8,434",420,428,9.4
+2015,Tak,RD15,"1,149","1,127",673,586,597,0.54
+2015,Tak,KDML105,"83,699","82,224","34,536",413,420,39.21
+2015,Tak,SuphanBuri60,"1,204","1,181",682,566,577,0.56
+2015,Tak,PhotoperiodSensitiveRice,"3,209","3,149","1,139",355,362,1.5
+2015,Tak,NonPhotoperiodSensitiveRice,"15,331","15,043","7,728",504,514,7.18
+2015,Tak,ChaiNat1,"7,522","7,380","4,249",565,576,3.52
+2015,Tak,PTT1,"1,263","1,239",664,526,536,0.59
+2015,Tak,SuphanBuri1,"4,237","4,157","2,272",536,547,1.98
+2015,Kamphaeng Phet,NativeRice,"15,692","15,471","7,601",484,491,1.31
+2015,Kamphaeng Phet,RD6,"8,546","8,403","4,621",541,550,0.71
+2015,Kamphaeng Phet,KDML105,"86,580","85,516","39,146",452,458,7.24
+2015,Kamphaeng Phet,SuphanBuri60,"30,596","30,263","17,354",567,573,2.56
+2015,Kamphaeng Phet,PhotoperiodSensitiveRice,"39,089","38,663","21,153",541,547,3.27
+2015,Kamphaeng Phet,NonPhotoperiodSensitiveRice,"856,105","846,989","503,853",589,595,71.56
+2015,Kamphaeng Phet,ChaiNat1,"20,347","20,125","9,566",470,475,1.7
+2015,Kamphaeng Phet,PTT1,"54,101","53,511","32,234",596,602,4.52
+2015,Kamphaeng Phet,SuphanBuri1,"85,246","84,316","48,273",566,573,7.13
+2015,Sukhothai,NativeRice,"39,619","32,681","11,935",301,365,4.23
+2015,Sukhothai,RD6,"15,545","12,704","5,011",322,394,1.66
+2015,Sukhothai,RD15,"3,204","2,643","1,287",402,487,0.34
+2015,Sukhothai,KDML105,"77,630","64,159","28,757",370,448,8.27
+2015,Sukhothai,SuphanBuri60,"30,632","24,770","12,831",419,518,3.26
+2015,Sukhothai,NonPhotoperiodSensitiveRice,"661,966","547,177","303,636",459,555,70.54
+2015,Sukhothai,ChaiNat1,"20,467","16,884","9,351",457,554,2.18
+2015,Sukhothai,SupanburiAromaticRice,"1,634","1,348",770,471,571,0.17
+2015,Sukhothai,PTT1,"42,763","34,977","20,398",477,583,4.56
+2015,Sukhothai,SuphanBuri1,"44,978","36,804","20,451",455,556,4.79
+2015,Phrae,NativeRice,"8,814","8,772","3,788",430,432,3.27
+2015,Phrae,RD6,"114,507","114,052","62,428",545,547,42.57
+2015,Phrae,KDML105,"33,596","33,383","17,412",518,522,12.49
+2015,Phrae,PhotoperiodSensitiveRice,"10,247","10,197","5,602",547,549,3.81
+2015,Phrae,NonPhotoperiodSensitiveRice,"101,845","101,302","56,275",553,556,37.86
+2015,Nan,NativeRice,"20,495","20,347","8,741",426,430,9.86
+2015,Nan,RD6,"87,570","86,999","44,126",504,507,42.14
+2015,Nan,KDML105,"6,150","6,101","3,033",493,497,2.96
+2015,Nan,PhotoperiodSensitiveRice,"38,408","38,101","19,658",512,516,18.48
+2015,Nan,NonPhotoperiodSensitiveRice,"55,197","54,774","29,357",532,536,26.56
+2015,Uttaradit,NativeRice,"8,246","6,727","3,416",414,508,1.56
+2015,Uttaradit,RD6,"40,362","32,921","15,016",372,456,7.64
+2015,Uttaradit,KDML105,"65,276","53,412","25,958",398,486,12.36
+2015,Uttaradit,SuphanBuri60,"10,867","8,964","6,255",576,698,2.06
+2015,Uttaradit,PhotoperiodSensitiveRice,"2,309","2,013","1,509",654,750,0.44
+2015,Uttaradit,NonPhotoperiodSensitiveRice,"229,364","186,681","104,923",457,562,43.41
+2015,Uttaradit,ChaiNat1,"2,463","2,009","1,381",561,687,0.47
+2015,Uttaradit,SupanburiAromaticRice,"3,676","2,998","1,744",474,582,0.69
+2015,Uttaradit,PTT1,"112,063","91,404","55,377",494,606,21.21
+2015,Uttaradit,SuphanBuri1,"53,694","43,795","28,490",531,651,10.16
+2015,Phitsanulok,NativeRice,"63,857","59,342","25,385",398,428,4.73
+2015,Phitsanulok,RD6,"55,247","51,341","26,495",480,516,4.1
+2015,Phitsanulok,RD15,"3,586","3,382","1,871",522,553,0.27
+2015,Phitsanulok,KDML105,"226,749","210,716","100,376",443,476,16.84
+2015,Phitsanulok,SuphanBuri60,"14,625","13,791","8,852",605,642,1.09
+2015,Phitsanulok,PhotoperiodSensitiveRice,"32,720","30,656","14,531",444,474,2.43
+2015,Phitsanulok,NonPhotoperiodSensitiveRice,"706,512","655,956","398,184",564,607,52.47
+2015,Phitsanulok,ChaiNat1,"120,308","111,801","64,485",536,577,8.94
+2015,Phitsanulok,PTT1,"19,405","18,133","13,080",674,721,1.44
+2015,Phitsanulok,SuphanBuri1,"103,524","96,204","61,988",599,644,7.69
+2015,Phichit,NativeRice,"82,463","78,391","33,020",400,421,5.25
+2015,Phichit,RD15,"10,237","9,819","4,427",432,451,0.65
+2015,Phichit,KDML105,"302,577","287,070","155,424",514,541,19.29
+2015,Phichit,SuphanBuri60,"7,610","7,255","5,635",740,777,0.49
+2015,Phichit,PhotoperiodSensitiveRice,"67,597","64,298","28,877",427,449,4.31
+2015,Phichit,NonPhotoperiodSensitiveRice,"790,412","750,278","457,773",579,610,50.38
+2015,Phichit,ChaiNat1,"88,563","84,083","52,343",591,623,5.64
+2015,Phichit,PTT1,"15,789","15,040","11,516",729,766,1.01
+2015,Phichit,SuphanBuri1,"203,647","193,295","126,890",623,656,12.98
+2015,Nakhon Sawan,NativeRice,"104,534","102,327","53,595",513,524,4.87
+2015,Nakhon Sawan,RD6,"4,256","4,166","2,462",578,591,0.2
+2015,Nakhon Sawan,KDML105,"752,966","736,949","389,799",518,529,35.09
+2015,Nakhon Sawan,SuphanBuri60,"5,991","5,914","3,528",589,597,0.28
+2015,Nakhon Sawan,PhotoperiodSensitiveRice,"20,346","19,966","10,658",524,534,0.95
+2015,Nakhon Sawan,NonPhotoperiodSensitiveRice,"571,934","559,879","323,716",566,578,26.65
+2015,Nakhon Sawan,ChaiNat1,"396,853","388,374","224,341",565,578,18.49
+2015,Nakhon Sawan,SupanburiAromaticRice,"2,336","2,287","1,329",569,581,0.11
+2015,Nakhon Sawan,PTT1,"63,101","61,769","39,339",623,637,2.94
+2015,Nakhon Sawan,SuphanBuri1,"223,692","219,069","144,128",644,658,10.42
+2015,Uthai Thani,NativeRice,"9,982","9,893","3,201",321,324,2.23
+2015,Uthai Thani,RD6,"3,613","3,578","1,555",430,435,0.81
+2015,Uthai Thani,KDML105,"25,693","25,492","11,607",452,455,5.72
+2015,Uthai Thani,SuphanBuri60,"13,622","13,539","7,200",529,532,3.04
+2015,Uthai Thani,NonPhotoperiodSensitiveRice,"246,647","244,176","152,354",618,624,55.01
+2015,Uthai Thani,ChaiNat1,"95,424","94,441","65,419",686,693,21.28
+2015,Uthai Thani,PTT1,"26,452","26,193","17,907",677,684,5.9
+2015,Uthai Thani,SuphanBuri1,"26,966","26,702","13,733",509,514,6.01
+2015,Phetchabun,NativeRice,"112,637","111,448","43,991",391,395,10.98
+2015,Phetchabun,RD6,"52,474","51,753","32,148",613,621,5.12
+2015,Phetchabun,RD15,"1,830","1,807",751,410,416,0.18
+2015,Phetchabun,KDML105,"217,292","214,315","94,873",437,443,21.19
+2015,Phetchabun,SuphanBuri60,"21,898","21,619","12,836",586,594,2.14
+2015,Phetchabun,PhotoperiodSensitiveRice,"27,651","27,297","13,315",482,488,2.7
+2015,Phetchabun,NonPhotoperiodSensitiveRice,"497,985","491,622","297,130",597,604,48.57
+2015,Phetchabun,ChaiNat1,"52,411","51,741","28,237",539,546,5.11
+2015,Phetchabun,SupanburiAromaticRice,"2,865","2,828","1,657",578,586,0.28
+2015,Phetchabun,PTT1,"12,678","12,516","8,928",704,713,1.24
+2015,Phetchabun,SuphanBuri1,"25,637","25,309","16,665",650,658,2.49
+2015,Loei,NativeRice,"53,689","52,571","17,437",325,332,15.92
+2015,Loei,RD6,"178,032","173,891","64,016",360,368,52.79
+2015,Loei,RD15,992,969,309,311,319,0.29
+2015,Loei,KDML105,"6,732","6,579","2,072",308,315,2
+2015,Loei,PhotoperiodSensitiveRice,"59,255","57,961","22,846",386,394,17.57
+2015,Loei,NonPhotoperiodSensitiveRice,"38,535","37,610","15,107",392,402,11.43
+2015,Nong Bua Lam Phu,NativeRice,"27,531","26,243","8,768",318,334,3.94
+2015,Nong Bua Lam Phu,RD6,"508,272","484,711","153,315",302,316,72.57
+2015,Nong Bua Lam Phu,RD15,"18,284","17,427","5,541",303,318,2.61
+2015,Nong Bua Lam Phu,KDML105,"113,983","108,243","32,830",288,303,16.27
+2015,Nong Bua Lam Phu,PhotoperiodSensitiveRice,"19,452","18,590","6,646",342,358,2.78
+2015,Nong Bua Lam Phu,NonPhotoperiodSensitiveRice,"12,845","12,343","4,286",334,347,1.83
+2015,Udon Thani,NativeRice,"49,475","48,124","21,216",429,441,2.94
+2015,Udon Thani,RD6,"1,264,225","1,232,429","464,597",367,377,75.16
+2015,Udon Thani,RD15,"63,646","62,038","21,126",332,341,3.78
+2015,Udon Thani,KDML105,"232,393","226,521","81,110",349,358,13.82
+2015,Udon Thani,PhotoperiodSensitiveRice,"50,292","48,972","18,479",367,377,2.99
+2015,Udon Thani,NonPhotoperiodSensitiveRice,"22,050","21,493","7,476",339,348,1.31
+2015,Nong Khai,NativeRice,"9,421","9,059","3,263",346,360,2.03
+2015,Nong Khai,RD6,"294,808","284,500","106,914",363,376,63.3
+2015,Nong Khai,RD15,"22,721","21,920","7,904",348,361,4.87
+2015,Nong Khai,KDML105,"90,750","87,550","30,866",340,353,19.49
+2015,Nong Khai,PhotoperiodSensitiveRice,"28,557","27,493","10,433",365,379,6.13
+2015,Nong Khai,NonPhotoperiodSensitiveRice,"19,443","18,757","6,643",342,354,4.18
+2015,Bueng Kan,NativeRice,"4,131","3,677","1,212",293,330,0.85
+2015,Bueng Kan,RD6,"384,264","340,771","104,318",271,306,78.48
+2015,Bueng Kan,RD15,"6,274","5,569","1,773",283,318,1.28
+2015,Bueng Kan,KDML105,"83,864","74,941","22,904",273,306,17.13
+2015,Bueng Kan,PhotoperiodSensitiveRice,"8,171","7,253","2,345",287,323,1.67
+2015,Bueng Kan,NonPhotoperiodSensitiveRice,"2,903","2,382","1,013",349,425,0.59
+2015,Sakon Nakhon,NativeRice,"61,809","58,638","17,231",279,294,3.09
+2015,Sakon Nakhon,RD6,"1,382,160","1,308,857","420,457",304,321,69.03
+2015,Sakon Nakhon,RD15,"93,945","88,973","28,019",298,315,4.69
+2015,Sakon Nakhon,KDML105,"347,412","329,325","104,973",302,319,17.35
+2015,Sakon Nakhon,PhotoperiodSensitiveRice,"33,467","31,746","10,902",326,343,1.67
+2015,Sakon Nakhon,NonPhotoperiodSensitiveRice,"83,407","78,692","23,407",281,297,4.17
+2015,Nakhon Phanom,NativeRice,"86,752","84,332","25,746",297,305,6.65
+2015,Nakhon Phanom,RD6,"571,013","554,581","198,301",347,358,43.73
+2015,Nakhon Phanom,RD15,"85,792","83,398","25,380",296,304,6.57
+2015,Nakhon Phanom,KDML105,"409,184","398,037","136,601",334,343,31.34
+2015,Nakhon Phanom,PhotoperiodSensitiveRice,"34,835","34,043","13,160",378,387,2.67
+2015,Nakhon Phanom,NonPhotoperiodSensitiveRice,"117,167","113,948","45,328",387,398,8.97
+2015,Nakhon Phanom,PTT1,887,862,381,430,442,0.07
+2015,Mukdahan,NativeRice,"28,815","28,054","10,327",358,368,5.93
+2015,Mukdahan,RD6,"328,297","318,513","123,630",377,388,67.48
+2015,Mukdahan,RD15,"10,756","10,483","3,486",324,333,2.21
+2015,Mukdahan,KDML105,"88,443","85,861","31,171",352,363,18.18
+2015,Mukdahan,PhotoperiodSensitiveRice,"15,236","14,821","6,508",427,439,3.13
+2015,Mukdahan,NonPhotoperiodSensitiveRice,"14,959","14,572","5,892",394,404,3.07
+2015,Yasothon,NativeRice,"28,450","27,205","9,721",342,357,2.19
+2015,Yasothon,RD6,"575,245","551,476","189,506",329,344,44.28
+2015,Yasothon,RD15,"17,263","16,590","6,746",391,407,1.33
+2015,Yasothon,KDML105,"651,301","619,855","223,743",344,361,50.14
+2015,Yasothon,PhotoperiodSensitiveRice,"19,077","18,302","6,402",336,350,1.47
+2015,Yasothon,NonPhotoperiodSensitiveRice,"7,617","7,336","2,691",353,367,0.59
+2015,Amnat Charoen,NativeRice,"21,805","21,397","8,509",390,398,2.3
+2015,Amnat Charoen,RD6,"391,272","384,286","134,811",345,351,41.36
+2015,Amnat Charoen,RD15,"8,112","7,953","2,871",354,361,0.86
+2015,Amnat Charoen,KDML105,"519,188","508,289","168,518",325,332,54.88
+2015,Amnat Charoen,PhotoperiodSensitiveRice,"1,616","1,584",572,354,361,0.17
+2015,Amnat Charoen,NonPhotoperiodSensitiveRice,"4,128","4,027","1,576",382,391,0.43
+2015,Ubon Ratchathani,NativeRice,"65,989","65,217","21,585",327,331,1.74
+2015,Ubon Ratchathani,RD6,"1,141,839","1,127,120","380,010",333,337,30.04
+2015,Ubon Ratchathani,RD15,"302,626","298,890","101,604",336,340,7.96
+2015,Ubon Ratchathani,KDML105,"2,158,320","2,133,389","687,958",319,322,56.79
+2015,Ubon Ratchathani,PhotoperiodSensitiveRice,"84,044","83,084","29,620",352,357,2.21
+2015,Ubon Ratchathani,NonPhotoperiodSensitiveRice,"47,901","47,355","18,333",383,387,1.26
+2015,Si Sa Ket,NativeRice,"62,230","60,856","24,342",391,400,2.11
+2015,Si Sa Ket,RD6,"157,279","154,050","56,270",358,365,5.32
+2015,Si Sa Ket,RD15,"113,962","110,557","41,095",361,372,3.86
+2015,Si Sa Ket,KDML105,"2,588,748","2,527,368","907,899",351,359,87.57
+2015,Si Sa Ket,PhotoperiodSensitiveRice,"16,548","16,236","6,876",416,424,0.56
+2015,Si Sa Ket,NonPhotoperiodSensitiveRice,"17,406","17,014","6,665",383,392,0.58
+2015,Surin,NativeRice,"25,749","24,476","9,722",378,397,0.83
+2015,Surin,RD6,"7,607","7,320","2,711",356,370,0.25
+2015,Surin,RD15,"487,562","469,351","185,584",381,395,15.82
+2015,Surin,KDML105,"2,553,975","2,457,534","944,296",370,384,82.85
+2015,Surin,PhotoperiodSensitiveRice,"6,571","6,423","2,833",431,441,0.21
+2015,Surin,NonPhotoperiodSensitiveRice,"1,267","1,219",560,442,459,0.04
+2015,Buri Ram,NativeRice,"115,295","112,679","45,695",396,406,4.23
+2015,Buri Ram,RD6,"123,902","121,487","51,090",412,421,4.55
+2015,Buri Ram,RD15,"68,979","67,438","24,190",351,359,2.53
+2015,Buri Ram,KDML105,"2,372,935","2,317,408","872,925",368,377,87.11
+2015,Buri Ram,PhotoperiodSensitiveRice,"13,295","13,002","6,583",495,506,0.49
+2015,Buri Ram,NonPhotoperiodSensitiveRice,"29,634","29,029","14,288",482,492,1.09
+2015,Maha Sarakham,NativeRice,"16,085","15,110","5,539",344,367,0.77
+2015,Maha Sarakham,RD6,"973,109","907,643","328,900",338,362,46.42
+2015,Maha Sarakham,RD15,"43,381","40,619","15,682",361,386,2.07
+2015,Maha Sarakham,KDML105,"1,006,011","945,350","344,316",342,364,47.99
+2015,Maha Sarakham,PhotoperiodSensitiveRice,"25,261","23,668","9,435",374,399,1.21
+2015,Maha Sarakham,NonPhotoperiodSensitiveRice,"24,750","23,208","8,682",351,374,1.18
+2015,Maha Sarakham,ChaiNat1,"7,636","7,150","3,732",489,522,0.36
+2015,Roi Et,NativeRice,"29,223","27,351","11,822",405,432,0.97
+2015,Roi Et,RD6,"786,090","729,252","284,090",361,390,25.89
+2015,Roi Et,RD15,"71,385","66,814","28,793",403,431,2.35
+2015,Roi Et,KDML105,"2,121,462","1,992,112","745,795",352,374,69.88
+2015,Roi Et,SuphanBuri60,701,656,259,369,395,0.02
+2015,Roi Et,PhotoperiodSensitiveRice,"14,622","13,686","4,952",339,362,0.48
+2015,Roi Et,NonPhotoperiodSensitiveRice,"12,299","11,511","4,999",406,434,0.41
+2015,Kalasin,NativeRice,"25,500","25,218","8,778",344,348,1.77
+2015,Kalasin,RD6,"1,045,156","1,031,587","380,416",364,369,72.61
+2015,Kalasin,RD15,"7,415","7,319","2,350",317,321,0.52
+2015,Kalasin,KDML105,"329,995","325,544","119,365",362,367,22.93
+2015,Kalasin,PhotoperiodSensitiveRice,"18,605","18,483","7,620",410,412,1.29
+2015,Kalasin,NonPhotoperiodSensitiveRice,"11,620","11,469","3,945",340,344,0.81
+2015,Kalasin,ChaiNat1,"1,035","1,022",486,470,476,0.07
+2015,Khon Kaen,NativeRice,"52,637","44,185","15,450",294,350,2.27
+2015,Khon Kaen,RD6,"1,636,788","1,366,467","465,638",284,341,70.64
+2015,Khon Kaen,RD15,"26,455","22,183","7,667",290,346,1.14
+2015,Khon Kaen,KDML105,"524,930","446,016","143,708",274,322,22.65
+2015,Khon Kaen,PhotoperiodSensitiveRice,"20,612","17,283","6,558",318,379,0.89
+2015,Khon Kaen,NonPhotoperiodSensitiveRice,"42,667","35,872","13,004",305,363,1.84
+2015,Khon Kaen,ChaiNat1,"13,131","11,011","4,339",330,394,0.57
+2015,Chaiyaphum,NativeRice,"122,541","110,283","37,114",303,337,7.87
+2015,Chaiyaphum,RD6,"610,047","557,266","199,784",327,359,39.21
+2015,Chaiyaphum,RD15,"34,041","30,649","11,102",326,362,2.19
+2015,Chaiyaphum,KDML105,"712,500","633,512","217,862",306,344,45.8
+2015,Chaiyaphum,PhotoperiodSensitiveRice,"59,623","53,732","20,328",341,378,3.83
+2015,Chaiyaphum,NonPhotoperiodSensitiveRice,"17,040","15,342","5,663",332,369,1.1
+2015,Nakhon Ratchasima,NativeRice,"225,001","196,573","76,898",342,391,6.48
+2015,Nakhon Ratchasima,RD6,"166,746","145,566","55,275",331,380,4.8
+2015,Nakhon Ratchasima,RD15,"51,631","45,963","16,670",323,363,1.49
+2015,Nakhon Ratchasima,KDML105,"2,632,275","2,275,127","767,822",292,337,75.84
+2015,Nakhon Ratchasima,SuphanBuri60,"17,776","15,811","7,763",437,491,0.51
+2015,Nakhon Ratchasima,PhotoperiodSensitiveRice,"135,121","118,248","51,874",384,439,3.89
+2015,Nakhon Ratchasima,NonPhotoperiodSensitiveRice,"81,503","71,962","35,738",438,497,2.35
+2015,Nakhon Ratchasima,ChaiNat1,"118,290","102,556","55,244",467,539,3.41
+2015,Nakhon Ratchasima,SupanburiAromaticRice,821,732,346,421,473,0.02
+2015,Nakhon Ratchasima,PTT1,"15,510","13,647","6,917",446,507,0.45
+2015,Nakhon Ratchasima,SuphanBuri1,"26,320","23,119","12,188",463,527,0.76
+2015,Saraburi,NativeRice,"10,198","10,068","4,371",429,434,3.36
+2015,Saraburi,KDML105,"16,735","16,546","7,898",472,477,5.53
+2015,Saraburi,PhotoperiodSensitiveRice,"9,842","9,727","5,701",579,586,3.25
+2015,Saraburi,NonPhotoperiodSensitiveRice,"175,195","172,583","109,541",625,635,57.85
+2015,Saraburi,ChaiNat1,"7,563","7,469","2,839",375,380,2.5
+2015,Saraburi,PTT1,"13,692","13,554","9,099",665,671,4.52
+2015,Saraburi,SuphanBuri1,"69,617","68,742","48,560",698,706,22.99
+2015,Lop Buri,NativeRice,"25,636","25,112","9,007",351,359,4.17
+2015,Lop Buri,KDML105,"203,475","198,917","85,684",421,431,33.09
+2015,Lop Buri,PhotoperiodSensitiveRice,"5,236","5,119","2,363",451,462,0.85
+2015,Lop Buri,NonPhotoperiodSensitiveRice,"191,257","186,832","100,268",524,537,31.11
+2015,Lop Buri,ChaiNat1,"45,274","44,319","24,774",547,559,7.36
+2015,Lop Buri,PTT1,"80,432","78,660","50,268",625,639,13.08
+2015,Lop Buri,SuphanBuri1,"63,563","62,139","42,470",668,683,10.34
+2015,Sing Buri,KDML105,640,639,435,680,681,0.23
+2015,Sing Buri,NonPhotoperiodSensitiveRice,"182,524","182,220","119,883",657,658,68.5
+2015,Sing Buri,PTT1,"62,932","62,856","49,147",781,782,23.62
+2015,Sing Buri,SuphanBuri1,"20,376","20,358","10,531",517,517,7.65
+2015,Chai Nat,NativeRice,"9,024","9,009","4,318",479,479,1.33
+2015,Chai Nat,KDML105,"15,274","15,253","6,858",449,450,2.21
+2015,Chai Nat,SuphanBuri60,"4,700","4,692","3,031",645,646,0.68
+2015,Chai Nat,NonPhotoperiodSensitiveRice,"390,021","389,263","247,520",635,636,56.53
+2015,Chai Nat,PTT1,"190,345","190,082","135,475",712,713,27.59
+2015,Chai Nat,SuphanBuri1,"80,463","80,356","55,967",696,696,11.66
+2015,Suphan Buri,NativeRice,"2,114","2,041","1,013",479,496,0.16
+2015,Suphan Buri,KDML105,"64,252","61,951","29,242",455,472,4.91
+2015,Suphan Buri,NonPhotoperiodSensitiveRice,"1,072,610","1,035,864","765,518",714,739,81.95
+2015,Suphan Buri,PTT1,"102,363","98,956","77,924",761,787,7.82
+2015,Suphan Buri,SuphanBuri1,"67,599","65,283","51,083",756,782,5.16
+2015,Ang Thong,NativeRice,"5,246","5,173","2,661",507,514,1.68
+2015,Ang Thong,KDML105,"6,356","6,287","2,967",467,472,2.05
+2015,Ang Thong,SuphanBuri60,"5,246","5,169","3,651",696,706,1.69
+2015,Ang Thong,PhotoperiodSensitiveRice,"5,611","5,548","2,029",362,366,1.8
+2015,Ang Thong,NonPhotoperiodSensitiveRice,"147,546","145,323","93,935",637,646,47.45
+2015,Ang Thong,ChaiNat1,"9,633","9,491","5,529",574,583,3.1
+2015,Ang Thong,PTT1,"125,634","123,782","84,948",676,686,40.4
+2015,Ang Thong,SuphanBuri1,"5,677","5,593","4,071",717,728,1.83
+2015,Ayutthaya,NativeRice,"24,963","24,835","9,135",366,368,3.63
+2015,Ayutthaya,KDML105,"2,633","2,614",720,273,275,0.38
+2015,Ayutthaya,SuphanBuri60,"16,269","16,153","10,511",646,651,2.36
+2015,Ayutthaya,PhotoperiodSensitiveRice,"22,563","22,402","10,163",450,454,3.27
+2015,Ayutthaya,NonPhotoperiodSensitiveRice,"519,003","515,225","344,919",665,669,75.29
+2015,Ayutthaya,ChaiNat1,"18,563","18,430","12,507",674,679,2.69
+2015,Ayutthaya,PTT1,"15,376","15,266","11,497",748,753,2.23
+2015,Ayutthaya,SuphanBuri1,"69,993","69,513","47,468",678,683,10.15
+2015,Nonthaburi,NonPhotoperiodSensitiveRice,"83,083","82,980","58,237",701,702,92.57
+2015,Nonthaburi,PTT1,"3,080","3,076","2,146",697,698,3.43
+2015,Nonthaburi,SuphanBuri1,"3,587","3,583","1,994",556,557,4
+2015,Bangkok Metropolis,NonPhotoperiodSensitiveRice,"55,889","54,538","36,476",653,669,69.18
+2015,Bangkok Metropolis,PTT1,"16,258","15,809","10,441",642,660,20.13
+2015,Bangkok Metropolis,SuphanBuri1,"8,635","8,453","6,279",727,743,10.69
+2015,Pathum Thani,SuphanBuri60,"1,345","1,338",679,505,507,0.42
+2015,Pathum Thani,NonPhotoperiodSensitiveRice,"287,883","286,470","204,859",712,715,90.69
+2015,Pathum Thani,PTT1,"12,536","12,470","8,372",668,671,3.95
+2015,Pathum Thani,SuphanBuri1,"15,696","15,626","9,677",617,619,4.94
+2015,Nakhon Nayok,NativeRice,"12,366","12,305","4,568",369,371,3.36
+2015,Nakhon Nayok,KDML105,"20,468","20,388","9,015",440,442,5.56
+2015,Nakhon Nayok,SuphanBuri60,"2,800","2,786","1,668",596,599,0.76
+2015,Nakhon Nayok,PhotoperiodSensitiveRice,"105,901","105,431","49,237",465,467,28.79
+2015,Nakhon Nayok,NonPhotoperiodSensitiveRice,"201,987","200,941","124,624",617,620,54.91
+2015,Nakhon Nayok,PTT1,"17,980","17,877","11,967",666,669,4.89
+2015,Nakhon Nayok,SuphanBuri1,"6,355","6,324","4,054",638,641,1.73
+2015,Prachin Buri,NativeRice,"20,366","19,521","5,187",255,266,5.26
+2015,Prachin Buri,RD6,953,912,298,313,327,0.25
+2015,Prachin Buri,KDML105,"72,563","69,364","21,627",298,312,18.75
+2015,Prachin Buri,SuphanBuri60,"13,535","13,003","6,066",448,467,3.5
+2015,Prachin Buri,PhotoperiodSensitiveRice,"154,274","147,642","53,252",345,361,39.87
+2015,Prachin Buri,NonPhotoperiodSensitiveRice,"108,719","104,045","54,517",501,524,28.1
+2015,Prachin Buri,PTT1,"3,905","3,737","1,903",487,509,1.01
+2015,Prachin Buri,SuphanBuri1,"12,633","12,090","7,784",616,644,3.26
+2015,Chachoengsao,NativeRice,"2,866","2,821",965,337,342,0.47
+2015,Chachoengsao,RD6,"2,214","2,180",741,335,340,0.35
+2015,Chachoengsao,KDML105,"85,706","84,584","32,524",379,385,13.73
+2015,Chachoengsao,SuphanBuri60,"37,146","36,623","26,720",719,730,5.96
+2015,Chachoengsao,PhotoperiodSensitiveRice,"40,806","40,176","22,527",552,561,6.54
+2015,Chachoengsao,NonPhotoperiodSensitiveRice,"368,933","362,893","246,662",669,680,59.15
+2015,Chachoengsao,PTT1,"22,566","22,218","13,538",600,609,3.62
+2015,Chachoengsao,SuphanBuri1,"63,524","62,644","40,078",631,640,10.18
+2015,Sa Kaeo,NativeRice,"13,392","9,516","3,337",249,351,1.83
+2015,Sa Kaeo,RD6,"14,898","10,897","3,581",240,329,2.02
+2015,Sa Kaeo,KDML105,"563,855","404,567","124,978",222,309,76.59
+2015,Sa Kaeo,PhotoperiodSensitiveRice,"74,144","53,188","18,991",256,357,10.07
+2015,Sa Kaeo,NonPhotoperiodSensitiveRice,"67,313","48,384","19,428",289,402,9.14
+2015,Sa Kaeo,PTT1,"2,563","2,040",814,318,399,0.35
+2015,Rayong,NativeRice,"5,281","5,227","1,919",363,367,26.64
+2015,Rayong,KDML105,"11,983","11,859","3,950",330,333,60.45
+2015,Rayong,PhotoperiodSensitiveRice,657,650,267,406,411,3.31
+2015,Rayong,NonPhotoperiodSensitiveRice,784,776,413,527,532,3.95
+2015,Rayong,ChaiNat1,245,242,81,331,335,1.24
+2015,Rayong,PTT1,874,865,454,519,525,4.41
+2015,Trat,NativeRice,"1,576","1,563",567,360,363,9.69
+2015,Trat,KDML105,"12,500","12,396","5,053",404,408,76.83
+2015,Trat,PhotoperiodSensitiveRice,806,799,401,498,502,4.95
+2015,Trat,NonPhotoperiodSensitiveRice,"1,024","1,015",334,326,329,6.29
+2015,Trat,PTT1,364,361,156,429,432,2.24
+2015,Rayong,NativeRice,438,433,144,329,333,2.48
+2015,Rayong,KDML105,"4,835","4,781","2,038",422,426,27.54
+2015,Rayong,SuphanBuri60,"1,246","1,232",459,368,373,7.1
+2015,Rayong,NonPhotoperiodSensitiveRice,"6,330","6,260","2,929",463,468,36.05
+2015,Rayong,PTT1,"1,866","1,845",799,428,433,10.63
+2015,Rayong,SuphanBuri1,"2,844","2,812","1,360",478,484,16.2
+2015,Chon Buri,NativeRice,"1,589","1,543",660,415,428,2.3
+2015,Chon Buri,KDML105,"24,177","23,482","9,593",397,409,35.2
+2015,Chon Buri,SuphanBuri60,"1,963","1,922",995,507,518,2.86
+2015,Chon Buri,PhotoperiodSensitiveRice,"4,330","4,206","1,849",427,440,6.31
+2015,Chon Buri,NonPhotoperiodSensitiveRice,"24,578","23,832","11,579",471,486,35.79
+2015,Chon Buri,ChaiNat1,945,923,549,581,595,1.38
+2015,Chon Buri,KhlongLuang1,246,239,141,573,590,0.36
+2015,Chon Buri,PTT1,"9,717","9,456","5,909",608,625,14.15
+2015,Chon Buri,SuphanBuri1,"1,130","1,098",678,600,617,1.65
+2015,Samut Prakan,SuphanBuri60,925,915,498,538,544,4.3
+2015,Samut Prakan,NonPhotoperiodSensitiveRice,"18,582","18,391","13,758",740,748,86.47
+2015,Samut Prakan,PTT1,"1,983","1,963","1,590",802,810,9.23
+2015,Samut Sakhon,PhotoperiodSensitiveRice,458,456,282,616,618,5.73
+2015,Samut Sakhon,NonPhotoperiodSensitiveRice,"5,925","5,899","4,228",714,717,74.13
+2015,Samut Sakhon,PTT1,"1,047","1,042",669,639,642,13.1
+2015,Samut Sakhon,SuphanBuri1,563,561,431,766,768,7.04
+2015,Nakhon Pathom,NativeRice,"2,367","2,343","1,563",660,667,0.7
+2015,Nakhon Pathom,SuphanBuri60,"8,649","8,559","6,095",705,712,2.59
+2015,Nakhon Pathom,NonPhotoperiodSensitiveRice,"275,310","272,444","200,948",730,738,82.38
+2015,Nakhon Pathom,ChaiNat1,"8,453","8,365","5,816",688,695,2.53
+2015,Nakhon Pathom,PTT1,"12,566","12,435","8,893",708,715,3.76
+2015,Nakhon Pathom,SuphanBuri1,"26,866","26,586","19,148",713,720,8.04
+2015,Kanchanaburi,NativeRice,"35,695","34,493","10,824",303,314,9.3
+2015,Kanchanaburi,KDML105,"39,802","38,406","13,987",351,364,10.35
+2015,Kanchanaburi,SuphanBuri60,"3,586","3,460","1,891",527,547,0.93
+2015,Kanchanaburi,PhotoperiodSensitiveRice,"47,880","46,200","24,437",510,529,12.45
+2015,Kanchanaburi,NonPhotoperiodSensitiveRice,"62,822","60,568","40,036",637,661,16.34
+2015,Kanchanaburi,ChaiNat1,"28,633","27,628","16,940",592,613,7.45
+2015,Kanchanaburi,SupanburiAromaticRice,"11,358","11,040","6,968",613,631,2.95
+2015,Kanchanaburi,PTT1,"41,912","40,442","28,187",673,697,10.9
+2015,Kanchanaburi,SuphanBuri1,"112,750","108,714","80,006",710,736,29.33
+2015,Ratchaburi,NativeRice,"8,546","8,472","3,888",455,459,3.01
+2015,Ratchaburi,KDML105,"16,306","16,164","6,686",410,414,5.75
+2015,Ratchaburi,PhotoperiodSensitiveRice,"21,100","20,926","12,569",596,601,7.43
+2015,Ratchaburi,NonPhotoperiodSensitiveRice,"55,207","54,637","35,812",649,655,19.45
+2015,Ratchaburi,ChaiNat1,"15,347","15,213","10,956",714,720,5.41
+2015,Ratchaburi,PTT1,"20,376","20,279","14,683",721,724,7.18
+2015,Ratchaburi,SuphanBuri1,"146,926","145,647","103,815",707,713,51.77
+2015,Samut Songkhram,NonPhotoperiodSensitiveRice,"1,893","1,893","1,343",709,709,53.14
+2015,Samut Songkhram,SuphanBuri1,"1,669","1,669","1,168",700,700,46.86
+2015,Phetchaburi,NativeRice,"5,398","5,343","2,189",406,410,1.83
+2015,Phetchaburi,KDML105,"2,576","2,555","1,123",436,440,0.87
+2015,Phetchaburi,SuphanBuri60,"15,637","15,478","10,510",672,679,5.28
+2015,Phetchaburi,PhotoperiodSensitiveRice,"28,158","27,891","18,358",652,658,9.5
+2015,Phetchaburi,NonPhotoperiodSensitiveRice,"144,422","142,857","101,867",705,713,48.75
+2015,Phetchaburi,ChaiNat1,"21,075","20,860","14,475",687,694,7.11
+2015,Phetchaburi,PTT1,"3,866","3,827","2,801",725,732,1.3
+2015,Phetchaburi,SuphanBuri1,"75,146","74,447","53,304",709,716,25.36
+2015,Prachuap Khiri Khan,NativeRice,"1,024",983,386,377,393,4.8
+2015,Prachuap Khiri Khan,KDML105,"1,207","1,159",514,426,443,5.65
+2015,Prachuap Khiri Khan,NonPhotoperiodSensitiveRice,"5,610","5,387","2,610",465,484,26.28
+2015,Prachuap Khiri Khan,ChaiNat1,"7,547","7,248","4,074",540,562,35.35
+2015,Prachuap Khiri Khan,PTT1,716,688,415,580,603,3.35
+2015,Prachuap Khiri Khan,SuphanBuri1,"5,246","5,038","3,082",587,612,24.57
+2015,Chumphon,NativeRice,"2,103","1,956",718,341,367,41.45
+2015,Chumphon,KDML105,201,187,64,318,342,3.96
+2015,Chumphon,PhotoperiodSensitiveRice,589,548,180,306,328,11.61
+2015,Chumphon,PTT1,"2,181","2,028",892,409,440,42.98
+2015,Ranong,NativeRice,649,641,232,357,362,59
+2015,Ranong,PhotoperiodSensitiveRice,451,446,139,308,312,41
+2015,Surat Thani,NativeRice,238,237,84,353,354,4.5
+2015,Surat Thani,KDML105,514,513,190,370,370,9.71
+2015,Surat Thani,PhotoperiodSensitiveRice,755,753,330,437,438,14.25
+2015,Surat Thani,PTT1,"3,788","3,778","1,715",453,454,71.54
+2015,Phangnga,NativeRice,340,339,99,291,292,25.03
+2015,Phangnga,KDML105,255,254,76,298,299,18.78
+2015,Phangnga,PhotoperiodSensitiveRice,439,437,129,294,295,32.33
+2015,Phangnga,PTT1,324,323,119,367,368,23.86
+2015,Phuket,NativeRice,16,16,7,438,438,23.19
+2015,Phuket,PhotoperiodSensitiveRice,53,52,27,509,519,76.81
+2015,Krabi,NativeRice,"2,047","2,026",645,315,318,30.74
+2015,Krabi,PhotoperiodSensitiveRice,"4,611","4,565","1,409",306,309,69.26
+2015,Trang,NativeRice,"11,180","11,114","4,232",379,381,90.95
+2015,Trang,NonPhotoperiodSensitiveRice,788,783,377,478,481,6.41
+2015,Trang,PTT1,324,322,139,429,432,2.64
+2015,Nakhon Si Thammarat,NativeRice,"42,648","42,271","14,129",331,334,14.81
+2015,Nakhon Si Thammarat,KDML105,"5,367","5,324","2,016",376,379,1.86
+2015,Nakhon Si Thammarat,SuphanBuri60,"3,024","3,002","1,337",442,445,1.05
+2015,Nakhon Si Thammarat,PhotoperiodSensitiveRice,"42,504","42,177","17,542",413,416,14.76
+2015,Nakhon Si Thammarat,NonPhotoperiodSensitiveRice,"83,013","82,197","41,574",501,506,28.83
+2015,Nakhon Si Thammarat,PTT1,"111,429","110,462","52,261",469,473,38.69
+2015,Pattani,NativeRice,"63,204","62,607","22,321",353,357,47.98
+2015,Pattani,PhotoperiodSensitiveRice,"39,622","39,367","16,014",404,407,30.09
+2015,Pattani,NonPhotoperiodSensitiveRice,"17,161","17,021","11,010",642,647,13.03
+2015,Pattani,ChaiNat1,"4,128","4,094","2,427",588,593,3.13
+2015,Pattani,PTT1,"7,601","7,549","4,872",641,645,5.77
+2015,Songkhla,NativeRice,"75,263","74,710","30,772",409,412,37.49
+2015,Songkhla,PhotoperiodSensitiveRice,"56,064","55,652","30,047",536,540,27.94
+2015,Songkhla,NonPhotoperiodSensitiveRice,"37,040","36,717","25,408",686,692,18.46
+2015,Songkhla,ChaiNat1,"3,744","3,716","2,215",592,596,1.87
+2015,Songkhla,PTT1,"28,577","28,417","18,359",642,646,14.24
+2015,Satun,NativeRice,"22,679","22,319","8,792",388,394,90.67
+2015,Satun,PhotoperiodSensitiveRice,"1,417","1,395",552,390,396,5.67
+2015,Satun,PTT1,916,901,410,448,455,3.66
+2015,Pattani,NativeRice,"55,593","55,014","20,339",366,370,67
+2015,Pattani,PhotoperiodSensitiveRice,"17,018","16,860","6,241",367,370,20.51
+2015,Pattani,NonPhotoperiodSensitiveRice,"10,362","10,280","3,854",372,375,12.49
+2015,Yala,NativeRice,"20,634","20,431","7,225",350,354,78.25
+2015,Yala,PhotoperiodSensitiveRice,"1,722","1,710",593,344,347,6.53
+2015,Yala,NonPhotoperiodSensitiveRice,"2,466","2,442",885,359,362,9.35
+2015,Yala,PTT1,"1,547","1,532",621,401,405,5.87
+2015,Narathiwat,NativeRice,"38,566","38,146","14,866",385,390,71.57
+2015,Narathiwat,PhotoperiodSensitiveRice,"7,765","7,692","3,002",387,390,14.41
+2015,Narathiwat,NonPhotoperiodSensitiveRice,"7,556","7,476","2,951",391,395,14.02
+,,,,,,,,
