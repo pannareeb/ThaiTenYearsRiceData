@@ -1,0 +1,326 @@
+---
+title: "SeedMethodTrends"
+author: "Pannaree Boonyuen"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document:
+    toc: true
+---
+
+The captions in the graph can represent the flow of data exploration. 
+# Import and name variables and factors properly
+```{r}
+library(readr)
+library(tidyverse)
+SeedMethod <- read_csv("/Users/panareeboonyuen/Thai-rice-open-data-Github/data/raw-data/MethodSeedDensityAnalysis.csv")
+names(SeedMethod)[11]<- "SeedUtilise"
+names(SeedMethod)[9]<- "YieldHA"
+names(SeedMethod)[8]<- "YieldPA"
+names(SeedMethod)[3]<- "Province"
+#Change "PlacingMachine" to a better term "SowingMachine"
+SeedMethod$method[SeedMethod$method == "PlacingMachine"] <- "DirectSow"
+```
+
+# Trends whole-country
+```{r}
+SeedMethod %>% 
+  ggplot() +
+  geom_point(mapping = aes(x=SeedUtilise,y=YieldHA, col = method))+
+  labs(x=" Seed Utilisation rate (Kg/rai)", y = "Yield (Kg/rai)",title = "Whole-country level", caption = "Any pattern of yield increase due to the increase in the seed use rate?\nFor Transplant and direct sow, the more seed use, the higher the yield. Homogenous trends.\nDry and Wet broadcast produced U-shaped trend. It can be due to year/region/province-specific effect.")
+#What if we are dividing the data by year
+SeedMethod %>%
+  ggplot() +
+  geom_point(mapping = aes(x=SeedUtilise,y=YieldPA, col = method))+
+  labs(x=" Seed Utilisation rate (Kg/rai)", y = "Yield per Planting Area (Kg/rai)", caption = "Each year sees the same trend, so it is not a year-specific effect")+
+  facet_wrap(~(year))
+#This means it is not a year-specific effect
+```
+
+# Add region
+```{r}
+region_provincelist <- read_csv("data/raw-data/region-provincellsit.csv",col_names = F)
+NorthEast<- region_provincelist[1,2]
+North <- region_provincelist[2,2]
+South <- region_provincelist[3,2]
+Central <- region_provincelist[4,2]
+East <- region_provincelist[5,2]
+West <- region_provincelist[6,2]
+library(stringr)
+FormProvinceStr <- function(Listcomma) {
+  Listcomma <- str_replace_all(Listcomma, " ", "")
+  Listcomma2 <- str_split(Listcomma, ",", simplify = TRUE)
+  return(Listcomma2)
+}
+
+#use with each list
+North <- FormProvinceStr(North)
+NorthEast <- FormProvinceStr(NorthEast)
+South <- FormProvinceStr(South)
+Central <- FormProvinceStr(Central)
+East <- FormProvinceStr(East)
+West <- FormProvinceStr(West)
+
+SeedMethod$Province<-str_replace_all(SeedMethod$Province, " ", "")
+
+provinceList <- c(NorthEast, North, South, Central, East, West)
+provinceList <-
+  provinceList[order(provinceList)] #order alphabetically
+#length(provinceList) == 77 checked
+
+SeedMethod<-SeedMethod %>% 
+  mutate(
+    region = case_when(
+      match(Province,NorthEast)>0 ~ "NorthEast",
+      match(Province,North)>0 ~ "North",
+      match(Province,South)>0 ~ "South",
+      match(Province,Central)>0 ~ "Central",
+      match(Province,East)>0 ~ "East",
+      match(Province,West)>0 ~ "West",
+      TRUE ~ "CheckSpell"
+    )
+  )
+```
+
+# Regional trend
+```{r}
+
+SeedMethod %>%
+  ggplot() +
+  geom_point(mapping = aes(x=SeedUtilise,y=YieldHA, col = method), size = 1)+
+  labs(x=" Seed Utilisation rate (Kg/rai)", y = "Yield per Planting Area (Kg/rai)", caption = "#North have two types of responses of yields to seed use increase, for Dry and Wet Broadcast,\nwhile other regions had consistent trends (positive correlation)\n#NE was not competitive at all for Dry Broadcast and Wet Broadcast\n(but this may be because of low-yielding KDML105 was planted the most in NE)\n#No Sowing machine method for Central and East seem fishy
+#No other management and cultivar information! - the problem of confounding factor
+")+
+  facet_wrap(~(region))
+```
+
+# Look at broadcasting - Northern
+```{r}
+SeedMethod %>% filter(region == "North") %>% filter(method == "DryBroadcast")  %>% 
+  ggplot() +
+  geom_point(mapping = aes(x=SeedUtilise,y=YieldHA, col = Province))+
+  labs(x=" Seed Utilisation rate (Kg/rai)", y = "Yield (Kg/rai)", title = "Northern province level - DryBroadcast")+
+  scale_y_continuous(limits = c(300,750))
+SeedMethod %>% filter(region == "North") %>% filter(method == "WetBroadcast")  %>% 
+  ggplot() +
+  geom_point(mapping = aes(x=SeedUtilise,y=YieldHA, col = Province))+
+  labs(x=" Seed Utilisation rate (Kg/rai)", y = "Yield (Kg/rai)", title = "Northern province level - WetBroadcast")+
+  scale_y_continuous(limits = c(300,750))
+cat("Two schools of thought for how much seed they should use
+Use low seed amount = ChaingMai, ChaingRai, Phrae, LamPang, LamPhun, Phayao
+Use high seed amount = Uttaradit, kamphaengPhet, Phetchabun, Phichit, Phitsanulok, Sukhothai\n")
+cat("Questions:
+1. What forces high-seed provinces to use a higher seed amount, which is a waste of money 
+2. What if they use lower seed?
+3. What cause high variation in low-seed use provinces?
+4. What make CM having so high yield")
+```
+
+# look at provincial level
+```{r}
+SeedMethod %>%
+  ggplot() +
+  geom_point(mapping = aes(x=SeedUtilise,y=YieldPA, col = method))+
+  labs(x=" Seed Utilisation rate (Kg/rai)", y = "Yield per Planting Area (Kg/rai)")+
+  facet_wrap(~Province)
+#we can see that there are too few data points to analyse each of the provinces 
+ggplot(data = SeedMethod) +
+  geom_bar(mapping=aes(x=Province, fill = method), orientation = "x")+
+  theme(axis.text.x =element_text(angle = 90, size = 5))
+
+#filter only high count province
+ObsCount<-SeedMethod %>%  group_by(Province) %>% summarise(n = n())
+HighObsCount <- ObsCount  %>% filter(n>=15)
+#There are 17 provinces with equal or more than 15 obeservations
+SeedMethod %>% filter(match(Province,HighObsCount$Province)>0) %>%
+  ggplot() +
+  geom_point(mapping = aes(x=SeedUtilise,y=YieldHA, col = method))+
+  labs(x=" Seed Utilisation rate (Kg/rai)", y = "Yield per Planting Area (Kg/rai)", caption = "The distribution of data points are so similar;\neach of the four corners are represented by the same methods\nBut we cannot just recommend the whole country to do transplanting\nas we do not have other information e.g. cultivar and irrigation status")+
+  facet_wrap(~Province)
+```
+
+# Comoparinng
+From DSSAT, simulation shows that Direct sowing (DS) give lower, more spread yields, while transplanting (TP) give higher, less spread yield. We will check that with the real data from OAE
+
+```{r}
+
+ggplot(SeedMethod) +
+  geom_histogram(mapping = aes(YieldHA, fill = region), position = "stack")+
+  facet_wrap(~method)+
+  labs(caption = "From the whole-country look, 
+Mean yield from DS fields is indeed smaller than that of TP DS has a narrower spread than TP. 
+However, them DS data come from only 4 regions (no East and Central),\nwhile TP data come from 6, so we will plot them by region. ", x = "Yield (kg/rai)")
+
+# Region considered
+ggplot(SeedMethod %>% filter(method %in% c("DirectSow", "Transplant"))) +
+  geom_histogram(mapping = aes(YieldHA, fill = region), position = "identity")+
+  facet_grid(method~region)+
+  theme(axis.text.x = element_text(angle = 90, size = 5))+
+  labs(x = "Yield (kg/rai)", caption = "Comparing the histograms of DS and TP of the same region,  
+  TP created a wider spread of yields. 
+Mean yield shows the sample expected trends
+")
+#get stat
+SeedMethod %>% group_by(method, region)  %>% summarise(n = n(), meanY = round(mean(YieldHA),digits = 2), sdY = round(sd(YieldHA),digits = 2), CVY = round(mean(YieldHA)/sd(YieldHA), digits = 2)) %>% filter(method %in% c("DirectSow", "Transplant")) 
+
+# Seed utilisation considered
+ggplot(SeedMethod %>% filter(method %in% c("DirectSow", "Transplant")) )+
+  geom_point(aes(x = SeedUtilise, y = YieldHA, col = method))+
+  labs(x = "Seed Utilisation Rate (kg/rai)", y = "Yield (kg/rai)")+
+  labs(caption = "In addition to region, another available factor that affect yields is seed utilisation rate. 
+       Its range for TP is actually greater than that for DS at country-level, 
+       possibly creating a wider spread or yield. ")
+#produce group , suing 8 and 14 as division
+lowseed <- SeedMethod %>% group_by(method,region) %>% filter(SeedUtilise <= 8,method %in% c("DirectSow", "Transplant")) 
+lowseed$group <- rep("low", nrow(lowseed))
+highseed <- SeedMethod %>% group_by(method,region) %>% filter(SeedUtilise > 8, SeedUtilise <= 14,method %in% c("DirectSow", "Transplant"))
+highseed$group <- rep("high", nrow(highseed))
+seedu2met <- rbind(lowseed, highseed)
+
+ggplot(seedu2met)+
+  geom_histogram(aes(x=YieldHA, fill = method), position = "identity", alpha = 0.5)+
+  facet_grid(region~group)+
+  labs(caption = "Mean yield show the consistent expected trends: 
+  higher for TP for all region and all seed utilisation group  
+  <still confounding = management and cultivar and weather>")
+
+seedu2met %>% group_by(group, region, method) %>% summarise(n = n(), meanY = mean(YieldHA), sdY = sd(YieldHA), CVY = mean(YieldHA)/sd(YieldHA))  %>% filter(method %in% c("DirectSow", "Transplant"), region %in% c("North", "NorthEast", "South", "West")) %>% ggplot()+
+  geom_col(aes(x= group , y = CVY, fill = method), position = "dodge")+
+  facet_wrap(~region, ncol = 4)+
+  labs(caption = "For spread, CV of TP (expected to be lower) is actually lower than that of DS 
+  in 3 out of 6 cases: in south for both seed use rates, 
+  and in west when the seed use rate in between 8-14 kr/rai (high)
+")
+
+
+```
+
+#Regression modelling
+* We will try using the data from Transplant (TP) and DirectSow (DS) fields to find a regression model of yield. Yield = response variable, and 1) method, 2) seed utilisation, and 3) region will be candidate explanatory variables.
+* Note that there are MAJOR confounding factors (variables that can affect yield that have not been controlled/known) such as varieties of rice, management (irrigation, fertilisation etc). 
+* However, we will attempt forming the model, because at least, the trend of yields are monotonically increasing (more so for TP) with respect to seed utilisation rate for TP and DS fields. We will only use data from 4 regions ("North", "NorthEast", "South", "West") because the other two regions have no records of DS fields
+
+```{r}
+#correlation between seed utilisation rate and yield
+mono_df <-
+  SeedMethod %>% filter(method %in% c("Transplant", "DirectSow"), region %in% c("North", "NorthEast", "South", "West"))
+
+mono_df %>%
+  ggplot() +
+  geom_point(mapping = aes(x = SeedUtilise, y = YieldHA, col = method))
+
+mod <- lm(YieldHA ~ method * SeedUtilise * region, data = mono_df)
+coef(mod)
+par(mfrow = c(2, 2))
+plot(mod) #residuals do not seem to spread randomly
+#drop1(mod, test = "F")
+m1 <- lm(YieldHA ~ method + SeedUtilise, data = mono_df)
+coef(m1)
+par(mfrow = c(2, 2))
+plot(m1)
+m2 <- lm(YieldHA ~ method + SeedUtilise + region, data = mono_df)
+coef(m2)
+par(mfrow = c(2, 2))
+plot(m2)
+
+mono_df$fittedYieldfull <- fitted(mod)
+mono_df$fittedYieldMS <- fitted(m1)
+mono_df$fittedYieldMSR <- fitted(m2)
+colmodel <-
+  c("M*S*R" = "red",
+    "M+S+R" = "darkgreen",
+    "M+S" = "blue")
+ggplot(mono_df) +
+  #geom_point(aes(x = SeedUtilise, y = YieldHA, col = method), shape = 2)+
+  geom_point(aes(x = SeedUtilise, y = YieldHA, col = method), shape = 2) +
+  geom_point(aes(x = SeedUtilise, y = fittedYieldfull, col = "M*S*R"), size = 1) +
+  geom_point(aes(x = SeedUtilise, y = fittedYieldMS, col = "M+S"), size = 1) +
+  geom_point(aes(x = SeedUtilise, y = fittedYieldMSR, col = "M+S+R"), size = 1) +
+  labs(x = "Seed Utilisation Rate (kg/rai)", y = "Yield (kg/rai)") +
+  scale_color_manual(values = colmodel) +
+  labs(title = "Fitted values of Yield from 3 models", color = "Model factors") +
+  #facet_wrap(~region)
+  facet_wrap( ~ method)
+#facet_grid(method~region)
+
+#compare models
+#1. using anova
+mod <- lm(YieldHA ~ method * SeedUtilise * region, data = mono_df)
+m1 <- lm(YieldHA ~ method + SeedUtilise, data = mono_df)
+m2 <- lm(YieldHA ~ method + SeedUtilise + region, data = mono_df)
+anova(mod, m1, m2)
+# F is high -> reject null that smaller model is better, so this means mod is better and the interactions between factors are significant (can help explain the variation in yield)
+
+#2. also try using AIC - stepwise regression: start with no predictors, then sequentially add the most contributive predictors (like forward selection). After adding each new variable, remove any variables that no longer provide an improvement in the model fit (like backward selection).
+library(MASS)
+step.model <- stepAIC(mod, direction = "both",
+                      trace = FALSE)
+summary(step.model)
+as.data.frame(coef(step.model))
+
+#3. using caret, with Cross validation
+library(caret)
+train.control <- trainControl(method = "cv", number = 10)
+step.model.ca <-
+  train(
+    YieldHA ~ method * SeedUtilise * region,
+    data = mono_df,
+    method = "lmStepAIC",
+    trControl = train.control,
+    trace = FALSE
+  )
+# Final model coefficients
+step.model.ca$finalModel
+# Summary of the model
+summary(step.model.ca$finalModel)
+
+#compare the result of coefficient from
+as.data.frame(coef(mod))
+as.data.frame(coef(step.model)) #same as above as no recalculation of the coef 
+as.data.frame(step.model.ca$finalModel[["coefficients"]])
+# Model accuracy
+step.model.ca$results
+
+#using content from http://www.sthda.com/english/articles/37-model-selection-essentials-in-r/154-stepwise-regression-essentials-in-r/
+
+
+testdataf <- data.frame(region = rep(c( "North"  ,   "NorthEast", "South"  ,   "West"), 3),SeedUtilise = c(rep(4,4),rep(8,4),rep(12,4)))
+testdataf <- rbind(testdataf,testdataf)
+testdataf$method <- c(rep("DirectSow",12) , rep("Transplant",12)) 
+predict(mod, newdata = testdataf)
+testdataf$fitted <- predict(mod, newdata = testdataf)
+ggplot(testdataf)+
+  geom_col(aes(y=fitted,x = SeedUtilise, fill = method), position = "dodge")+
+  facet_wrap(~region, nrow = 1)+
+  scale_x_continuous(breaks = c(4,8,12))+
+  labs(x= "Seed use rate (kg/rai)", y = "fitted yield from the best model (kg/rai)", caption = "In NE, the effects on yields of TP and DS are the most similar. 
+       The increasing yield with seed use rates are also seen with both planting types in the South ans in NE. 
+       However, in N, it seems that the higher seed use rate caused the lower yield. 
+       Lastly, in the West, only for TP that the increasing trends with seed use rate is seen. 
+       Therefore, we will look further into these 2 regions to understand these unusal results.")
+
+#Plot of North
+ggplot(SeedMethod %>% filter(region == "North", method %in% c("Transplant","DirectSow")))+
+  geom_point(aes(y=YieldHA,x = SeedUtilise, col = Province))+
+  facet_wrap(~method)+
+  labs(x = "Seed use rate (kg/rai)", y = "Recorded Yield (kg/rai)", title = "North", caption = "The raw data do not contain seed use rate = 4 kg/rai for DS and TP, and no 8 kg/rai for TP, 
+  it would have been an extrapolation at regional level when we examplified the previous graph. 
+       For DS, only Lamphun and ChiangMai truly showed downward yield trends with increasing seed use. 
+       For TP, it is hard to notice the trends. 
+  However, one trend is that data points from the same provinces cluster quite close together")
+
+#Plot of West
+ggplot(SeedMethod %>% filter(region == "West", method %in% c("Transplant","DirectSow")))+
+  geom_point(aes(y=YieldHA,x = SeedUtilise, col = Province))+
+  facet_wrap(~method)+
+  labs(x = "Seed use rate (kg/rai)", y = "Recorded Yield (kg/rai)", title = "West",caption = "For DS, data were only from two provinces,
+       but, again, too few data points per province to further the investigation 
+       and data points from the same provinces cluster quite close together ")
+
+```
+
+Summary: The best model is when using all three factors including the interaction terms, according to stepwise regression using AIC with 10-fold cross validation (Yield ~ method * SeedUtilise * region). The example new input data set shows in
+From the performance metric table, on average the model is off by 36-47 kg/rai. The unrealistic downward trends of yield with increasing seed use in N (for both planting methods) and W (for direct sowing) can be due to 1) extrapolation, 2) province-specific effect and we cannot investigate further because 1) too few data points for each province, 2) no other management variables given for each province. 
+
+
+
+
